@@ -30,126 +30,125 @@ namespace CoffeeManager
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProduct));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAddGroup = new System.Windows.Forms.Button();
-            this.cbbGroup = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.txtUnit = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.btnAccept = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            btnCancel = new System.Windows.Forms.Button();
+            btnAccept = new System.Windows.Forms.Button();
+            btnAddGroup = new System.Windows.Forms.Button();
+            cbbGroup = new System.Windows.Forms.ComboBox();
+            label4 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            txtDescription = new System.Windows.Forms.TextBox();
+            txtUnitPrice = new System.Windows.Forms.TextBox();
+            txtUnit = new System.Windows.Forms.TextBox();
+            txtName = new System.Windows.Forms.TextBox();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.btnCancel);
-            this.groupBox1.Controls.Add(this.btnAccept);
-            this.groupBox1.Controls.Add(this.btnAddGroup);
-            this.groupBox1.Controls.Add(this.cbbGroup);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtDescription);
-            this.groupBox1.Controls.Add(this.txtUnitPrice);
-            this.groupBox1.Controls.Add(this.txtUnit);
-            this.groupBox1.Controls.Add(this.txtName);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // btnAddGroup
-            // 
-            resources.ApplyResources(this.btnAddGroup, "btnAddGroup");
-            this.btnAddGroup.Name = "btnAddGroup";
-            this.btnAddGroup.UseVisualStyleBackColor = true;
-            // 
-            // cbbGroup
-            // 
-            resources.ApplyResources(this.cbbGroup, "cbbGroup");
-            this.cbbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbGroup.FormattingEnabled = true;
-            this.cbbGroup.Name = "cbbGroup";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // txtDescription
-            // 
-            resources.ApplyResources(this.txtDescription, "txtDescription");
-            this.txtDescription.Name = "txtDescription";
-            // 
-            // txtUnitPrice
-            // 
-            resources.ApplyResources(this.txtUnitPrice, "txtUnitPrice");
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            // 
-            // txtUnit
-            // 
-            resources.ApplyResources(this.txtUnit, "txtUnit");
-            this.txtUnit.Name = "txtUnit";
-            // 
-            // txtName
-            // 
-            resources.ApplyResources(this.txtName, "txtName");
-            this.txtName.Name = "txtName";
-            // 
-            // btnAccept
-            // 
-            resources.ApplyResources(this.btnAccept, "btnAccept");
-            this.btnAccept.Name = "btnAccept";
-            this.btnAccept.UseVisualStyleBackColor = true;
+            groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            groupBox1.Controls.Add(btnCancel);
+            groupBox1.Controls.Add(btnAccept);
+            groupBox1.Controls.Add(btnAddGroup);
+            groupBox1.Controls.Add(cbbGroup);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(txtDescription);
+            groupBox1.Controls.Add(txtUnitPrice);
+            groupBox1.Controls.Add(txtUnit);
+            groupBox1.Controls.Add(txtName);
+            resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            groupBox1.Name = "groupBox1";
+            groupBox1.TabStop = false;
             // 
             // btnCancel
             // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnCancel, "btnCancel");
+            btnCancel.Name = "btnCancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnAccept
+            // 
+            resources.ApplyResources(btnAccept, "btnAccept");
+            btnAccept.Name = "btnAccept";
+            btnAccept.UseVisualStyleBackColor = true;
+            // 
+            // btnAddGroup
+            // 
+            resources.ApplyResources(btnAddGroup, "btnAddGroup");
+            btnAddGroup.Name = "btnAddGroup";
+            btnAddGroup.UseVisualStyleBackColor = true;
+            // 
+            // cbbGroup
+            // 
+            resources.ApplyResources(cbbGroup, "cbbGroup");
+            cbbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbbGroup.FormattingEnabled = true;
+            cbbGroup.Name = "cbbGroup";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            // 
+            // txtDescription
+            // 
+            resources.ApplyResources(txtDescription, "txtDescription");
+            txtDescription.Name = "txtDescription";
+            // 
+            // txtUnitPrice
+            // 
+            resources.ApplyResources(txtUnitPrice, "txtUnitPrice");
+            txtUnitPrice.Name = "txtUnitPrice";
+            // 
+            // txtUnit
+            // 
+            resources.ApplyResources(txtUnit, "txtUnit");
+            txtUnit.Name = "txtUnit";
+            // 
+            // txtName
+            // 
+            resources.ApplyResources(txtName, "txtName");
+            txtName.Name = "txtName";
             // 
             // FrmAddProduct
             // 
-            this.AcceptButton = this.btnAccept;
+            AcceptButton = btnAccept;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.groupBox1);
-            this.Name = "FrmAddProduct";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.Control;
+            Controls.Add(groupBox1);
+            Name = "FrmAddProduct";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
