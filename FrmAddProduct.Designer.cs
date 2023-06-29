@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace CoffeeManager
 {
     partial class FrmAddProduct
@@ -30,98 +32,126 @@ namespace CoffeeManager
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProduct));
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            btnCancel = new System.Windows.Forms.Button();
-            btnAccept = new System.Windows.Forms.Button();
-            btnAddGroup = new System.Windows.Forms.Button();
-            cbbGroup = new System.Windows.Forms.ComboBox();
-            label4 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            label6 = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
-            txtDescription = new System.Windows.Forms.TextBox();
-            txtUnitPrice = new System.Windows.Forms.TextBox();
-            txtUnit = new System.Windows.Forms.TextBox();
-            txtName = new System.Windows.Forms.TextBox();
+            groupBox1 = new GroupBox();
+            btnAccept = new Button();
+            lok = new Label();
+            txt_Id = new TextBox();
+            txtCate = new ComboBox();
+            label133 = new Label();
+            txtDate = new DateTimePicker();
+            btnCancel = new Button();
+            cbbGroup = new ComboBox();
+            dat = new Label();
+            pri = new Label();
+            Q = new Label();
+            Gr = new Label();
+            ten = new Label();
+            txtUnitPrice = new TextBox();
+            txtUnit = new TextBox();
+            txtName = new TextBox();
+            btnRegis = new Button();
+            btnXProduct = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            groupBox1.Controls.Add(btnCancel);
+            groupBox1.Controls.Add(btnXProduct);
             groupBox1.Controls.Add(btnAccept);
-            groupBox1.Controls.Add(btnAddGroup);
+            groupBox1.Controls.Add(lok);
+            groupBox1.Controls.Add(txt_Id);
+            groupBox1.Controls.Add(txtCate);
+            groupBox1.Controls.Add(label133);
+            groupBox1.Controls.Add(txtDate);
+            groupBox1.Controls.Add(btnCancel);
             groupBox1.Controls.Add(cbbGroup);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(txtDescription);
+            groupBox1.Controls.Add(dat);
+            groupBox1.Controls.Add(pri);
+            groupBox1.Controls.Add(Q);
+            groupBox1.Controls.Add(Gr);
+            groupBox1.Controls.Add(ten);
             groupBox1.Controls.Add(txtUnitPrice);
             groupBox1.Controls.Add(txtUnit);
             groupBox1.Controls.Add(txtName);
+            groupBox1.Controls.Add(btnRegis);
             resources.ApplyResources(groupBox1, "groupBox1");
             groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             groupBox1.Name = "groupBox1";
             groupBox1.TabStop = false;
-            // 
-            // btnCancel
-            // 
-            resources.ApplyResources(btnCancel, "btnCancel");
-            btnCancel.Name = "btnCancel";
-            btnCancel.UseVisualStyleBackColor = true;
             // 
             // btnAccept
             // 
             resources.ApplyResources(btnAccept, "btnAccept");
             btnAccept.Name = "btnAccept";
             btnAccept.UseVisualStyleBackColor = true;
+            btnAccept.Click += btnAccept_Click;
             // 
-            // btnAddGroup
+            // lok
             // 
-            resources.ApplyResources(btnAddGroup, "btnAddGroup");
-            btnAddGroup.Name = "btnAddGroup";
-            btnAddGroup.UseVisualStyleBackColor = true;
+            resources.ApplyResources(lok, "lok");
+            lok.Name = "lok";
+            // 
+            // txt_Id
+            // 
+            resources.ApplyResources(txt_Id, "txt_Id");
+            txt_Id.Name = "txt_Id";
+            // 
+            // txtCate
+            // 
+            resources.ApplyResources(txtCate, "txtCate");
+            txtCate.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtCate.FormattingEnabled = true;
+            txtCate.Name = "txtCate";
+            // 
+            // label133
+            // 
+            resources.ApplyResources(label133, "label133");
+            label133.Name = "label133";
+            // 
+            // txtDate
+            // 
+            resources.ApplyResources(txtDate, "txtDate");
+            txtDate.Name = "txtDate";
+            // 
+            // btnCancel
+            // 
+            resources.ApplyResources(btnCancel, "btnCancel");
+            btnCancel.Name = "btnCancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // cbbGroup
             // 
             resources.ApplyResources(cbbGroup, "cbbGroup");
-            cbbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbbGroup.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbGroup.FormattingEnabled = true;
             cbbGroup.Name = "cbbGroup";
             // 
-            // label4
+            // dat
             // 
-            resources.ApplyResources(label4, "label4");
-            label4.Name = "label4";
+            resources.ApplyResources(dat, "dat");
+            dat.Name = "dat";
             // 
-            // label3
+            // pri
             // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
+            resources.ApplyResources(pri, "pri");
+            pri.Name = "pri";
             // 
-            // label2
+            // Q
             // 
-            resources.ApplyResources(label2, "label2");
-            label2.Name = "label2";
+            resources.ApplyResources(Q, "Q");
+            Q.Name = "Q";
             // 
-            // label6
+            // Gr
             // 
-            resources.ApplyResources(label6, "label6");
-            label6.Name = "label6";
+            resources.ApplyResources(Gr, "Gr");
+            Gr.Name = "Gr";
             // 
-            // label1
+            // ten
             // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
-            // 
-            // txtDescription
-            // 
-            resources.ApplyResources(txtDescription, "txtDescription");
-            txtDescription.Name = "txtDescription";
+            resources.ApplyResources(ten, "ten");
+            ten.Name = "ten";
             // 
             // txtUnitPrice
             // 
@@ -138,11 +168,26 @@ namespace CoffeeManager
             resources.ApplyResources(txtName, "txtName");
             txtName.Name = "txtName";
             // 
+            // btnRegis
+            // 
+            resources.ApplyResources(btnRegis, "btnRegis");
+            btnRegis.Name = "btnRegis";
+            btnRegis.UseVisualStyleBackColor = true;
+            btnRegis.Click += btnRegis_Click;
+            // 
+            // btnXProduct
+            // 
+            resources.ApplyResources(btnXProduct, "btnXProduct");
+            btnXProduct.ForeColor = System.Drawing.Color.Red;
+            btnXProduct.Name = "btnXProduct";
+            btnXProduct.UseVisualStyleBackColor = true;
+            btnXProduct.Click += btnXProduct_Click;
+            // 
             // FrmAddProduct
             // 
             AcceptButton = btnAccept;
             resources.ApplyResources(this, "$this");
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.Control;
             Controls.Add(groupBox1);
             Name = "FrmAddProduct";
@@ -154,18 +199,23 @@ namespace CoffeeManager
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label dat;
+        private System.Windows.Forms.Label pri;
+        private System.Windows.Forms.Label Q;
+        private System.Windows.Forms.Label ten;
         private System.Windows.Forms.TextBox txtUnitPrice;
         private System.Windows.Forms.TextBox txtUnit;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox cbbGroup;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnAddGroup;
+        private System.Windows.Forms.Label Gr;
+        private DateTimePicker txtDate;
+        private Label label133;
+        private ComboBox txtCate;
+        private Button btnRegis;
+        private TextBox txt_Id;
+        private Label lok;
+        private Button btnXProduct;
     }
 }

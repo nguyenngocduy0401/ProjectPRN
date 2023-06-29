@@ -30,264 +30,290 @@ namespace CoffeeManager
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduct));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvMain = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idGroupProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.img = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnAddPr = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnXProduct = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.grbGroup = new System.Windows.Forms.GroupBox();
-            this.dgvGroup = new System.Windows.Forms.DataGridView();
-            this.idGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAddGroup = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnX = new System.Windows.Forms.Button();
-            this.txtSearchGroup = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.grbGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGroup)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new System.Windows.Forms.Panel();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            dgvMain = new System.Windows.Forms.DataGridView();
+            id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            idGroupProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txt_CategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            panel3 = new System.Windows.Forms.Panel();
+            create = new System.Windows.Forms.Button();
+            btnAddPr = new System.Windows.Forms.Button();
+            panel5 = new System.Windows.Forms.Panel();
+            btnXProduct = new System.Windows.Forms.Button();
+            txtSearch = new System.Windows.Forms.TextBox();
+            grbGroup = new System.Windows.Forms.GroupBox();
+            dgvGroup = new System.Windows.Forms.DataGridView();
+            idGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            nameGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            descriptionGr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            panel2 = new System.Windows.Forms.Panel();
+            btnAddGroup = new System.Windows.Forms.Button();
+            panel4 = new System.Windows.Forms.Panel();
+            btnX = new System.Windows.Forms.Button();
+            txtSearchGroup = new System.Windows.Forms.TextBox();
+            panel1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvMain).BeginInit();
+            panel3.SuspendLayout();
+            panel5.SuspendLayout();
+            grbGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvGroup).BeginInit();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.grbGroup);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(grbGroup);
+            resources.ApplyResources(panel1, "panel1");
+            panel1.Name = "panel1";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgvMain);
-            this.groupBox2.Controls.Add(this.panel3);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            groupBox2.Controls.Add(dgvMain);
+            groupBox2.Controls.Add(panel3);
+            resources.ApplyResources(groupBox2, "groupBox2");
+            groupBox2.ForeColor = System.Drawing.Color.Blue;
+            groupBox2.Name = "groupBox2";
+            groupBox2.TabStop = false;
             // 
             // dgvMain
             // 
-            this.dgvMain.AllowUserToAddRows = false;
-            this.dgvMain.BackgroundColor = System.Drawing.Color.White;
-            this.dgvMain.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
-            this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.idGroupProduct,
-            this.name,
-            this.unit,
-            this.unitPrice,
-            this.description,
-            this.img});
-            resources.ApplyResources(this.dgvMain, "dgvMain");
-            this.dgvMain.Name = "dgvMain";
-            this.dgvMain.ReadOnly = true;
-            this.dgvMain.RowHeadersVisible = false;
-            this.dgvMain.RowTemplate.Height = 40;
-            this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvMain.AllowUserToAddRows = false;
+            dgvMain.BackgroundColor = System.Drawing.Color.White;
+            dgvMain.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { id, idGroupProduct, txt_ProductId, txt_name, txt_Price, Quantity, txt_Brand, txt_Date, txt_CategoryId });
+            resources.ApplyResources(dgvMain, "dgvMain");
+            dgvMain.Name = "dgvMain";
+            dgvMain.ReadOnly = true;
+            dgvMain.RowHeadersVisible = false;
+            dgvMain.RowTemplate.Height = 40;
+            dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+
+            dgvMain.CellContentDoubleClick += dgvMain_CellContentDoubleClick;
             // 
             // id
             // 
-            this.id.DataPropertyName = "id";
-            resources.ApplyResources(this.id, "id");
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
+            id.DataPropertyName = "id";
+            resources.ApplyResources(id, "id");
+            id.Name = "id";
+            id.ReadOnly = true;
+            id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // idGroupProduct
             // 
-            resources.ApplyResources(this.idGroupProduct, "idGroupProduct");
-            this.idGroupProduct.Name = "idGroupProduct";
-            this.idGroupProduct.ReadOnly = true;
+            resources.ApplyResources(idGroupProduct, "idGroupProduct");
+            idGroupProduct.Name = "idGroupProduct";
+            idGroupProduct.ReadOnly = true;
+            idGroupProduct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // name
+            // txt_ProductId
             // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.DataPropertyName = "name";
-            resources.ApplyResources(this.name, "name");
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
+            txt_ProductId.DataPropertyName = "ProductId";
+            resources.ApplyResources(txt_ProductId, "txt_ProductId");
+            txt_ProductId.Name = "txt_ProductId";
+            txt_ProductId.ReadOnly = true;
+            txt_ProductId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // unit
+            // txt_name
             // 
-            this.unit.DataPropertyName = "unit";
-            resources.ApplyResources(this.unit, "unit");
-            this.unit.Name = "unit";
-            this.unit.ReadOnly = true;
+            txt_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            txt_name.DataPropertyName = "Name";
+            resources.ApplyResources(txt_name, "txt_name");
+            txt_name.Name = "txt_name";
+            txt_name.ReadOnly = true;
+            txt_name.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // unitPrice
+            // txt_Price
             // 
-            this.unitPrice.DataPropertyName = "unitPrice";
-            resources.ApplyResources(this.unitPrice, "unitPrice");
-            this.unitPrice.Name = "unitPrice";
-            this.unitPrice.ReadOnly = true;
+            txt_Price.DataPropertyName = "Price";
+            resources.ApplyResources(txt_Price, "txt_Price");
+            txt_Price.Name = "txt_Price";
+            txt_Price.ReadOnly = true;
+            txt_Price.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // description
+            // Quantity
             // 
-            this.description.DataPropertyName = "description";
-            resources.ApplyResources(this.description, "description");
-            this.description.Name = "description";
-            this.description.ReadOnly = true;
+            Quantity.DataPropertyName = "Quantity";
+            resources.ApplyResources(Quantity, "Quantity");
+            Quantity.Name = "Quantity";
+            Quantity.ReadOnly = true;
+            Quantity.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // img
+            // txt_Brand
             // 
-            this.img.DataPropertyName = "img";
-            resources.ApplyResources(this.img, "img");
-            this.img.Name = "img";
-            this.img.ReadOnly = true;
+            txt_Brand.DataPropertyName = "Brand";
+            resources.ApplyResources(txt_Brand, "txt_Brand");
+            txt_Brand.Name = "txt_Brand";
+            txt_Brand.ReadOnly = true;
+            txt_Brand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // txt_Date
+            // 
+            txt_Date.DataPropertyName = "Date";
+            resources.ApplyResources(txt_Date, "txt_Date");
+            txt_Date.Name = "txt_Date";
+            txt_Date.ReadOnly = true;
+            txt_Date.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // txt_CategoryId
+            // 
+            txt_CategoryId.DataPropertyName = "CategoryId";
+            resources.ApplyResources(txt_CategoryId, "txt_CategoryId");
+            txt_CategoryId.Name = "txt_CategoryId";
+            txt_CategoryId.ReadOnly = true;
+            txt_CategoryId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Controls.Add(this.btnAddPr);
-            this.panel3.Controls.Add(this.panel5);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            panel3.Controls.Add(create);
+            panel3.Controls.Add(btnAddPr);
+            panel3.Controls.Add(panel5);
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Name = "panel3";
+            // 
+            // create
+            // 
+            resources.ApplyResources(create, "create");
+            create.Name = "create";
+            create.UseVisualStyleBackColor = true;
+            create.Click += button1_Click;
             // 
             // btnAddPr
             // 
-            resources.ApplyResources(this.btnAddPr, "btnAddPr");
-            this.btnAddPr.Name = "btnAddPr";
-            this.btnAddPr.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnAddPr, "btnAddPr");
+            btnAddPr.Name = "btnAddPr";
+            btnAddPr.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel5.Controls.Add(this.btnXProduct);
-            this.panel5.Controls.Add(this.txtSearch);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            panel5.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            panel5.Controls.Add(btnXProduct);
+            panel5.Controls.Add(txtSearch);
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Name = "panel5";
             // 
             // btnXProduct
             // 
-            resources.ApplyResources(this.btnXProduct, "btnXProduct");
-            this.btnXProduct.ForeColor = System.Drawing.Color.Red;
-            this.btnXProduct.Name = "btnXProduct";
-            this.btnXProduct.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnXProduct, "btnXProduct");
+            btnXProduct.ForeColor = System.Drawing.Color.Red;
+            btnXProduct.Name = "btnXProduct";
+            btnXProduct.UseVisualStyleBackColor = true;
+            btnXProduct.Click += btnXProduct_Click;
             // 
             // txtSearch
             // 
-            resources.ApplyResources(this.txtSearch, "txtSearch");
-            this.txtSearch.Name = "txtSearch";
+            resources.ApplyResources(txtSearch, "txtSearch");
+            txtSearch.Name = "txtSearch";
             // 
             // grbGroup
             // 
-            this.grbGroup.Controls.Add(this.dgvGroup);
-            this.grbGroup.Controls.Add(this.panel2);
-            resources.ApplyResources(this.grbGroup, "grbGroup");
-            this.grbGroup.ForeColor = System.Drawing.Color.Blue;
-            this.grbGroup.Name = "grbGroup";
-            this.grbGroup.TabStop = false;
+            grbGroup.Controls.Add(dgvGroup);
+            grbGroup.Controls.Add(panel2);
+            resources.ApplyResources(grbGroup, "grbGroup");
+            grbGroup.ForeColor = System.Drawing.Color.Blue;
+            grbGroup.Name = "grbGroup";
+            grbGroup.TabStop = false;
             // 
             // dgvGroup
             // 
-            this.dgvGroup.AllowUserToAddRows = false;
-            this.dgvGroup.BackgroundColor = System.Drawing.Color.White;
-            this.dgvGroup.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
-            this.dgvGroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGroup.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idGr,
-            this.nameGr,
-            this.descriptionGr});
-            resources.ApplyResources(this.dgvGroup, "dgvGroup");
-            this.dgvGroup.Name = "dgvGroup";
-            this.dgvGroup.ReadOnly = true;
-            this.dgvGroup.RowHeadersVisible = false;
-            this.dgvGroup.RowTemplate.Height = 40;
-            this.dgvGroup.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvGroup.AllowUserToAddRows = false;
+            dgvGroup.BackgroundColor = System.Drawing.Color.White;
+            dgvGroup.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            dgvGroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvGroup.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { idGr, nameGr, descriptionGr });
+            resources.ApplyResources(dgvGroup, "dgvGroup");
+            dgvGroup.Name = "dgvGroup";
+            dgvGroup.ReadOnly = true;
+            dgvGroup.RowHeadersVisible = false;
+            dgvGroup.RowTemplate.Height = 40;
+            dgvGroup.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // idGr
             // 
-            this.idGr.DataPropertyName = "idGr";
-            resources.ApplyResources(this.idGr, "idGr");
-            this.idGr.Name = "idGr";
-            this.idGr.ReadOnly = true;
+            idGr.DataPropertyName = "idGr";
+            resources.ApplyResources(idGr, "idGr");
+            idGr.Name = "idGr";
+            idGr.ReadOnly = true;
             // 
             // nameGr
             // 
-            this.nameGr.DataPropertyName = "nameGr";
-            resources.ApplyResources(this.nameGr, "nameGr");
-            this.nameGr.Name = "nameGr";
-            this.nameGr.ReadOnly = true;
+            nameGr.DataPropertyName = "nameGr";
+            resources.ApplyResources(nameGr, "nameGr");
+            nameGr.Name = "nameGr";
+            nameGr.ReadOnly = true;
             // 
             // descriptionGr
             // 
-            this.descriptionGr.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descriptionGr.DataPropertyName = "descriptionGr";
-            resources.ApplyResources(this.descriptionGr, "descriptionGr");
-            this.descriptionGr.Name = "descriptionGr";
-            this.descriptionGr.ReadOnly = true;
+            descriptionGr.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            descriptionGr.DataPropertyName = "descriptionGr";
+            resources.ApplyResources(descriptionGr, "descriptionGr");
+            descriptionGr.Name = "descriptionGr";
+            descriptionGr.ReadOnly = true;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.btnAddGroup);
-            this.panel2.Controls.Add(this.panel4);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
+            panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            panel2.Controls.Add(btnAddGroup);
+            panel2.Controls.Add(panel4);
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
             // 
             // btnAddGroup
             // 
-            resources.ApplyResources(this.btnAddGroup, "btnAddGroup");
-            this.btnAddGroup.Name = "btnAddGroup";
-            this.btnAddGroup.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnAddGroup, "btnAddGroup");
+            btnAddGroup.Name = "btnAddGroup";
+            btnAddGroup.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel4.Controls.Add(this.btnX);
-            this.panel4.Controls.Add(this.txtSearchGroup);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            panel4.Controls.Add(btnX);
+            panel4.Controls.Add(txtSearchGroup);
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
             // 
             // btnX
             // 
-            resources.ApplyResources(this.btnX, "btnX");
-            this.btnX.ForeColor = System.Drawing.Color.Red;
-            this.btnX.Name = "btnX";
-            this.btnX.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnX, "btnX");
+            btnX.ForeColor = System.Drawing.Color.Red;
+            btnX.Name = "btnX";
+            btnX.UseVisualStyleBackColor = true;
             // 
             // txtSearchGroup
             // 
-            resources.ApplyResources(this.txtSearchGroup, "txtSearchGroup");
-            this.txtSearchGroup.Name = "txtSearchGroup";
+            resources.ApplyResources(txtSearchGroup, "txtSearchGroup");
+            txtSearchGroup.Name = "txtSearchGroup";
             // 
             // FrmProduct
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "FrmProduct";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.grbGroup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGroup)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Name = "FrmProduct";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            panel1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvMain).EndInit();
+            panel3.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            grbGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvGroup).EndInit();
+            panel2.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -307,15 +333,19 @@ namespace CoffeeManager
         private System.Windows.Forms.Button btnX;
         private System.Windows.Forms.Button btnAddPr;
         private System.Windows.Forms.Button btnAddGroup;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idGroupProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unitPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn description;
-        private System.Windows.Forms.DataGridViewImageColumn img;
         private System.Windows.Forms.DataGridViewTextBoxColumn idGr;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameGr;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionGr;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button create;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idGroupProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_ProductId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_Brand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txt_CategoryId;
     }
 }

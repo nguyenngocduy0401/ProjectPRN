@@ -31,315 +31,324 @@ namespace CoffeeManager
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            pnlRight = new System.Windows.Forms.Panel();
-            flpRight = new System.Windows.Forms.FlowLayoutPanel();
-            groupBox3 = new System.Windows.Forms.GroupBox();
-            BtnAddPr = new System.Windows.Forms.Button();
-            btnX = new System.Windows.Forms.Button();
-            txtSearch = new System.Windows.Forms.TextBox();
-            groupBox7 = new System.Windows.Forms.GroupBox();
-            cbbMenu = new System.Windows.Forms.ComboBox();
-            pnlCenter = new System.Windows.Forms.Panel();
-            groupBox6 = new System.Windows.Forms.GroupBox();
-            dgvMain = new System.Windows.Forms.DataGridView();
-            drink = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            quantily = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            idBill = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            idProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            intoMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            panel1 = new System.Windows.Forms.Panel();
-            groupBox8 = new System.Windows.Forms.GroupBox();
-            txtDescription = new System.Windows.Forms.TextBox();
-            txtMoneyReturn = new System.Windows.Forms.Label();
-            txtTotalMoney = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            txtMoneyPay = new System.Windows.Forms.TextBox();
-            groupBox5 = new System.Windows.Forms.GroupBox();
-            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            btnSave = new System.Windows.Forms.Button();
-            btnPay = new System.Windows.Forms.Button();
-            pnlRight.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox7.SuspendLayout();
-            pnlCenter.SuspendLayout();
-            groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvMain).BeginInit();
-            panel1.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox5.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
-            SuspendLayout();
+            this.pnlRight = new System.Windows.Forms.Panel();
+            this.flpRight = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnAddPr = new System.Windows.Forms.Button();
+            this.btnX = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbbMenu = new System.Windows.Forms.ComboBox();
+            this.pnlCenter = new System.Windows.Forms.Panel();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dgvMain = new System.Windows.Forms.DataGridView();
+            this.drink = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantily = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idBill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.intoMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtMoneyReturn = new System.Windows.Forms.Label();
+            this.txtTotalMoney = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMoneyPay = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPay = new System.Windows.Forms.Button();
+            this.pnlRight.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.pnlCenter.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlRight
             // 
-            resources.ApplyResources(pnlRight, "pnlRight");
-            pnlRight.BackColor = System.Drawing.Color.FromArgb(255, 224, 192);
-            pnlRight.Controls.Add(flpRight);
-            pnlRight.Controls.Add(groupBox3);
-            pnlRight.Controls.Add(groupBox7);
-            pnlRight.Name = "pnlRight";
+            resources.ApplyResources(this.pnlRight, "pnlRight");
+            this.pnlRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.pnlRight.Controls.Add(this.flpRight);
+            this.pnlRight.Controls.Add(this.groupBox3);
+            this.pnlRight.Controls.Add(this.groupBox7);
+            this.pnlRight.Name = "pnlRight";
             // 
             // flpRight
             // 
-            resources.ApplyResources(flpRight, "flpRight");
-            flpRight.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
-            flpRight.Name = "flpRight";
+            resources.ApplyResources(this.flpRight, "flpRight");
+            this.flpRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.flpRight.Name = "flpRight";
             // 
             // groupBox3
             // 
-            resources.ApplyResources(groupBox3, "groupBox3");
-            groupBox3.BackColor = System.Drawing.Color.Silver;
-            groupBox3.Controls.Add(BtnAddPr);
-            groupBox3.Controls.Add(btnX);
-            groupBox3.Controls.Add(txtSearch);
-            groupBox3.ForeColor = System.Drawing.Color.Blue;
-            groupBox3.Name = "groupBox3";
-            groupBox3.TabStop = false;
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.BackColor = System.Drawing.Color.Silver;
+            this.groupBox3.Controls.Add(this.BtnAddPr);
+            this.groupBox3.Controls.Add(this.btnX);
+            this.groupBox3.Controls.Add(this.txtSearch);
+            this.groupBox3.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
             // 
             // BtnAddPr
             // 
-            resources.ApplyResources(BtnAddPr, "BtnAddPr");
-            BtnAddPr.Name = "BtnAddPr";
-            BtnAddPr.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.BtnAddPr, "BtnAddPr");
+            this.BtnAddPr.Name = "BtnAddPr";
+            this.BtnAddPr.UseVisualStyleBackColor = true;
             // 
             // btnX
             // 
-            resources.ApplyResources(btnX, "btnX");
-            btnX.ForeColor = System.Drawing.Color.Red;
-            btnX.Name = "btnX";
-            btnX.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnX, "btnX");
+            this.btnX.ForeColor = System.Drawing.Color.Red;
+            this.btnX.Name = "btnX";
+            this.btnX.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
-            resources.ApplyResources(txtSearch, "txtSearch");
-            txtSearch.Name = "txtSearch";
+            resources.ApplyResources(this.txtSearch, "txtSearch");
+            this.txtSearch.Name = "txtSearch";
             // 
             // groupBox7
             // 
-            resources.ApplyResources(groupBox7, "groupBox7");
-            groupBox7.Controls.Add(cbbMenu);
-            groupBox7.ForeColor = System.Drawing.Color.Blue;
-            groupBox7.Name = "groupBox7";
-            groupBox7.TabStop = false;
+            resources.ApplyResources(this.groupBox7, "groupBox7");
+            this.groupBox7.Controls.Add(this.cbbMenu);
+            this.groupBox7.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.TabStop = false;
             // 
             // cbbMenu
             // 
-            resources.ApplyResources(cbbMenu, "cbbMenu");
-            cbbMenu.BackColor = System.Drawing.Color.White;
-            cbbMenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbbMenu.FormattingEnabled = true;
-            cbbMenu.Name = "cbbMenu";
+            resources.ApplyResources(this.cbbMenu, "cbbMenu");
+            this.cbbMenu.BackColor = System.Drawing.Color.White;
+            this.cbbMenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMenu.FormattingEnabled = true;
+            this.cbbMenu.Name = "cbbMenu";
             // 
             // pnlCenter
             // 
-            resources.ApplyResources(pnlCenter, "pnlCenter");
-            pnlCenter.Controls.Add(groupBox6);
-            pnlCenter.Controls.Add(panel1);
-            pnlCenter.Name = "pnlCenter";
+            resources.ApplyResources(this.pnlCenter, "pnlCenter");
+            this.pnlCenter.Controls.Add(this.groupBox6);
+            this.pnlCenter.Controls.Add(this.panel1);
+            this.pnlCenter.Name = "pnlCenter";
             // 
             // groupBox6
             // 
-            resources.ApplyResources(groupBox6, "groupBox6");
-            groupBox6.Controls.Add(dgvMain);
-            groupBox6.ForeColor = System.Drawing.Color.Blue;
-            groupBox6.Name = "groupBox6";
-            groupBox6.TabStop = false;
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Controls.Add(this.dgvMain);
+            this.groupBox6.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
             // 
             // dgvMain
             // 
-            resources.ApplyResources(dgvMain, "dgvMain");
-            dgvMain.BackgroundColor = System.Drawing.Color.White;
-            dgvMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dgvMain.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            resources.ApplyResources(this.dgvMain, "dgvMain");
+            this.dgvMain.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMain.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(192, 192, 255);
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            dgvMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { drink, id, unitPrice, quantily, idBill, idProduct, intoMoney, description });
-            dgvMain.GridColor = System.Drawing.Color.White;
-            dgvMain.Name = "dgvMain";
-            dgvMain.RowHeadersVisible = false;
-            dgvMain.RowTemplate.Height = 30;
-            dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.drink,
+            this.id,
+            this.unitPrice,
+            this.quantily,
+            this.idBill,
+            this.idProduct,
+            this.intoMoney,
+            this.description});
+            this.dgvMain.GridColor = System.Drawing.Color.White;
+            this.dgvMain.Name = "dgvMain";
+            this.dgvMain.RowHeadersVisible = false;
+            this.dgvMain.RowTemplate.Height = 30;
+            this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // drink
             // 
-            drink.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            drink.DataPropertyName = "drink";
-            resources.ApplyResources(drink, "drink");
-            drink.Name = "drink";
-            drink.ReadOnly = true;
+            this.drink.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.drink.DataPropertyName = "drink";
+            resources.ApplyResources(this.drink, "drink");
+            this.drink.Name = "drink";
+            this.drink.ReadOnly = true;
             // 
             // id
             // 
-            id.DataPropertyName = "id";
-            resources.ApplyResources(id, "id");
-            id.Name = "id";
+            this.id.DataPropertyName = "id";
+            resources.ApplyResources(this.id, "id");
+            this.id.Name = "id";
             // 
             // unitPrice
             // 
-            unitPrice.DataPropertyName = "unitPrice";
-            resources.ApplyResources(unitPrice, "unitPrice");
-            unitPrice.Name = "unitPrice";
+            this.unitPrice.DataPropertyName = "unitPrice";
+            resources.ApplyResources(this.unitPrice, "unitPrice");
+            this.unitPrice.Name = "unitPrice";
             // 
             // quantily
             // 
-            quantily.DataPropertyName = "quantity";
-            resources.ApplyResources(quantily, "quantily");
-            quantily.Name = "quantily";
-            quantily.ReadOnly = true;
+            this.quantily.DataPropertyName = "quantity";
+            resources.ApplyResources(this.quantily, "quantily");
+            this.quantily.Name = "quantily";
+            this.quantily.ReadOnly = true;
             // 
             // idBill
             // 
-            idBill.DataPropertyName = "idBill";
-            resources.ApplyResources(idBill, "idBill");
-            idBill.Name = "idBill";
+            this.idBill.DataPropertyName = "idBill";
+            resources.ApplyResources(this.idBill, "idBill");
+            this.idBill.Name = "idBill";
             // 
             // idProduct
             // 
-            idProduct.DataPropertyName = "idProduct";
-            resources.ApplyResources(idProduct, "idProduct");
-            idProduct.Name = "idProduct";
+            this.idProduct.DataPropertyName = "idProduct";
+            resources.ApplyResources(this.idProduct, "idProduct");
+            this.idProduct.Name = "idProduct";
             // 
             // intoMoney
             // 
-            intoMoney.DataPropertyName = "intoMoney";
-            resources.ApplyResources(intoMoney, "intoMoney");
-            intoMoney.Name = "intoMoney";
+            this.intoMoney.DataPropertyName = "intoMoney";
+            resources.ApplyResources(this.intoMoney, "intoMoney");
+            this.intoMoney.Name = "intoMoney";
             // 
             // description
             // 
-            description.DataPropertyName = "description";
-            resources.ApplyResources(description, "description");
-            description.Name = "description";
+            this.description.DataPropertyName = "description";
+            resources.ApplyResources(this.description, "description");
+            this.description.Name = "description";
             // 
             // panel1
             // 
-            resources.ApplyResources(panel1, "panel1");
-            panel1.Controls.Add(groupBox8);
-            panel1.Controls.Add(groupBox5);
-            panel1.Name = "panel1";
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.groupBox8);
+            this.panel1.Controls.Add(this.groupBox5);
+            this.panel1.Name = "panel1";
             // 
             // groupBox8
             // 
-            resources.ApplyResources(groupBox8, "groupBox8");
-            groupBox8.BackColor = System.Drawing.Color.FromArgb(255, 192, 255);
-            groupBox8.Controls.Add(txtDescription);
-            groupBox8.Controls.Add(txtMoneyReturn);
-            groupBox8.Controls.Add(txtTotalMoney);
-            groupBox8.Controls.Add(label1);
-            groupBox8.Controls.Add(label4);
-            groupBox8.Controls.Add(label2);
-            groupBox8.Controls.Add(label3);
-            groupBox8.Controls.Add(txtMoneyPay);
-            groupBox8.ForeColor = System.Drawing.Color.Blue;
-            groupBox8.Name = "groupBox8";
-            groupBox8.TabStop = false;
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.groupBox8.Controls.Add(this.txtDescription);
+            this.groupBox8.Controls.Add(this.txtMoneyReturn);
+            this.groupBox8.Controls.Add(this.txtTotalMoney);
+            this.groupBox8.Controls.Add(this.label1);
+            this.groupBox8.Controls.Add(this.label4);
+            this.groupBox8.Controls.Add(this.label2);
+            this.groupBox8.Controls.Add(this.label3);
+            this.groupBox8.Controls.Add(this.txtMoneyPay);
+            this.groupBox8.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
             // 
             // txtDescription
             // 
-            resources.ApplyResources(txtDescription, "txtDescription");
-            txtDescription.Name = "txtDescription";
+            resources.ApplyResources(this.txtDescription, "txtDescription");
+            this.txtDescription.Name = "txtDescription";
             // 
             // txtMoneyReturn
             // 
-            resources.ApplyResources(txtMoneyReturn, "txtMoneyReturn");
-            txtMoneyReturn.ForeColor = System.Drawing.Color.Red;
-            txtMoneyReturn.Name = "txtMoneyReturn";
+            resources.ApplyResources(this.txtMoneyReturn, "txtMoneyReturn");
+            this.txtMoneyReturn.ForeColor = System.Drawing.Color.Red;
+            this.txtMoneyReturn.Name = "txtMoneyReturn";
             // 
             // txtTotalMoney
             // 
-            resources.ApplyResources(txtTotalMoney, "txtTotalMoney");
-            txtTotalMoney.ForeColor = System.Drawing.Color.Red;
-            txtTotalMoney.Name = "txtTotalMoney";
+            resources.ApplyResources(this.txtTotalMoney, "txtTotalMoney");
+            this.txtTotalMoney.ForeColor = System.Drawing.Color.Red;
+            this.txtTotalMoney.Name = "txtTotalMoney";
             // 
             // label1
             // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // label4
             // 
-            resources.ApplyResources(label4, "label4");
-            label4.Name = "label4";
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // label2
             // 
-            resources.ApplyResources(label2, "label2");
-            label2.Name = "label2";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // label3
             // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // txtMoneyPay
             // 
-            resources.ApplyResources(txtMoneyPay, "txtMoneyPay");
-            txtMoneyPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            txtMoneyPay.ForeColor = System.Drawing.Color.Blue;
-            txtMoneyPay.Name = "txtMoneyPay";
+            resources.ApplyResources(this.txtMoneyPay, "txtMoneyPay");
+            this.txtMoneyPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMoneyPay.ForeColor = System.Drawing.Color.Blue;
+            this.txtMoneyPay.Name = "txtMoneyPay";
             // 
             // groupBox5
             // 
-            resources.ApplyResources(groupBox5, "groupBox5");
-            groupBox5.Controls.Add(flowLayoutPanel1);
-            groupBox5.ForeColor = System.Drawing.Color.Blue;
-            groupBox5.Name = "groupBox5";
-            groupBox5.TabStop = false;
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox5.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
-            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(255, 224, 192);
-            flowLayoutPanel1.Controls.Add(btnSave);
-            flowLayoutPanel1.Controls.Add(btnPay);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.flowLayoutPanel1.Controls.Add(this.btnSave);
+            this.flowLayoutPanel1.Controls.Add(this.btnPay);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // btnSave
             // 
-            resources.ApplyResources(btnSave, "btnSave");
-            btnSave.Name = "btnSave";
-            btnSave.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.Name = "btnSave";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnPay
             // 
-            resources.ApplyResources(btnPay, "btnPay");
-            btnPay.Name = "btnPay";
-            btnPay.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnPay, "btnPay");
+            this.btnPay.Name = "btnPay";
+            this.btnPay.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            Controls.Add(pnlCenter);
-            Controls.Add(pnlRight);
-            Name = "FrmMain";
-            WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            pnlRight.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            pnlCenter.ResumeLayout(false);
-            groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvMain).EndInit();
-            panel1.ResumeLayout(false);
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox5.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlCenter);
+            this.Controls.Add(this.pnlRight);
+            this.Name = "FrmMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.pnlRight.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.pnlCenter.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
