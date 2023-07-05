@@ -47,7 +47,9 @@ namespace CoffeeManager
             InitializeComponent();
         }
 
+        private void dgvMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
+        }
     }
 }
