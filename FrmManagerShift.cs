@@ -105,9 +105,10 @@ namespace ProjectPRN
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            var search = txtSearch.Text;
+            /*var search = 0
+                ;
             var listShift = _shiftServices.GetAll().Where(p => p.NameShift.ToLower().Contains(search.ToLower()));
-            dgvListShift.DataSource = new BindingSource { DataSource = listShift };
+            dgvListShift.DataSource = new BindingSource { DataSource = listShift };*/
         }
 
         private void dgvListShift_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -121,6 +122,26 @@ namespace ProjectPRN
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmManagerShift_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
         {
 
         }
