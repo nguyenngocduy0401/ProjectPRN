@@ -1,4 +1,6 @@
 ﻿using Microsoft.Identity.Client;
+using Respository.Models;
+using Respository.Services;
 using System;
 using System.Data;
 using System.Drawing;
@@ -9,8 +11,6 @@ using System.Linq;
 using System.Security.Principal;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using Repository.Models;
-using Repository.Service;
 
 namespace CoffeeManager
 {

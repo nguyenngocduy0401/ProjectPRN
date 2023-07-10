@@ -33,7 +33,6 @@ namespace CoffeeManager
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProduct));
             groupBox1 = new GroupBox();
-            btnXProduct = new Button();
             btnAccept = new Button();
             lok = new Label();
             txt_Id = new TextBox();
@@ -51,6 +50,7 @@ namespace CoffeeManager
             txtUnit = new TextBox();
             txtName = new TextBox();
             btnRegis = new Button();
+            btnXProduct = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,15 +79,6 @@ namespace CoffeeManager
             groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             groupBox1.Name = "groupBox1";
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // btnXProduct
-            // 
-            resources.ApplyResources(btnXProduct, "btnXProduct");
-            btnXProduct.ForeColor = System.Drawing.Color.Red;
-            btnXProduct.Name = "btnXProduct";
-            btnXProduct.UseVisualStyleBackColor = true;
-            btnXProduct.Click += btnXProduct_Click;
             // 
             // btnAccept
             // 
@@ -183,6 +174,14 @@ namespace CoffeeManager
             btnRegis.Name = "btnRegis";
             btnRegis.UseVisualStyleBackColor = true;
             btnRegis.Click += btnRegis_Click;
+            // 
+            // btnXProduct
+            // 
+            resources.ApplyResources(btnXProduct, "btnXProduct");
+            btnXProduct.ForeColor = System.Drawing.Color.Red;
+            btnXProduct.Name = "btnXProduct";
+            btnXProduct.UseVisualStyleBackColor = true;
+            btnXProduct.Click += btnXProduct_Click;
             // 
             // FrmAddProduct
             // 
