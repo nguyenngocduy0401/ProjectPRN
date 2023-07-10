@@ -42,13 +42,10 @@ namespace CoffeeManager
             pnlCenter = new System.Windows.Forms.Panel();
             groupBox6 = new System.Windows.Forms.GroupBox();
             dgvMain = new System.Windows.Forms.DataGridView();
-            drink = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             quantily = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            idBill = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            idProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            intoMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             panel1 = new System.Windows.Forms.Panel();
             groupBox8 = new System.Windows.Forms.GroupBox();
@@ -166,33 +163,26 @@ namespace CoffeeManager
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgvMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { drink, id, unitPrice, quantily, idBill, idProduct, intoMoney, description });
+            dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { name, price, quantily, branch, description });
             dgvMain.GridColor = System.Drawing.Color.White;
             dgvMain.Name = "dgvMain";
             dgvMain.RowHeadersVisible = false;
             dgvMain.RowTemplate.Height = 30;
             dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dgvMain.CellContentClick += dgvMain_CellContentClick;
             // 
-            // drink
+            // name
             // 
-            drink.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            drink.DataPropertyName = "drink";
-            resources.ApplyResources(drink, "drink");
-            drink.Name = "drink";
-            drink.ReadOnly = true;
+            name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            name.DataPropertyName = "name";
+            resources.ApplyResources(name, "name");
+            name.Name = "name";
+            name.ReadOnly = true;
             // 
-            // id
+            // price
             // 
-            id.DataPropertyName = "id";
-            resources.ApplyResources(id, "id");
-            id.Name = "id";
-            // 
-            // unitPrice
-            // 
-            unitPrice.DataPropertyName = "unitPrice";
-            resources.ApplyResources(unitPrice, "unitPrice");
-            unitPrice.Name = "unitPrice";
+            price.DataPropertyName = "price";
+            resources.ApplyResources(price, "price");
+            price.Name = "price";
             // 
             // quantily
             // 
@@ -201,23 +191,11 @@ namespace CoffeeManager
             quantily.Name = "quantily";
             quantily.ReadOnly = true;
             // 
-            // idBill
+            // branch
             // 
-            idBill.DataPropertyName = "idBill";
-            resources.ApplyResources(idBill, "idBill");
-            idBill.Name = "idBill";
-            // 
-            // idProduct
-            // 
-            idProduct.DataPropertyName = "idProduct";
-            resources.ApplyResources(idProduct, "idProduct");
-            idProduct.Name = "idProduct";
-            // 
-            // intoMoney
-            // 
-            intoMoney.DataPropertyName = "intoMoney";
-            resources.ApplyResources(intoMoney, "intoMoney");
-            intoMoney.Name = "intoMoney";
+            branch.DataPropertyName = "branch";
+            resources.ApplyResources(branch, "branch");
+            branch.Name = "branch";
             // 
             // description
             // 
@@ -264,6 +242,7 @@ namespace CoffeeManager
             resources.ApplyResources(txtTotalMoney, "txtTotalMoney");
             txtTotalMoney.ForeColor = System.Drawing.Color.Red;
             txtTotalMoney.Name = "txtTotalMoney";
+            txtTotalMoney.TextChanged += txtTotalMoney_TextChanged;
             // 
             // label1
             // 
@@ -291,6 +270,7 @@ namespace CoffeeManager
             txtMoneyPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtMoneyPay.ForeColor = System.Drawing.Color.Blue;
             txtMoneyPay.Name = "txtMoneyPay";
+            txtMoneyPay.TextChanged += txtMoneyPay_TextChanged;
             // 
             // groupBox5
             // 
@@ -313,12 +293,14 @@ namespace CoffeeManager
             resources.ApplyResources(btnSave, "btnSave");
             btnSave.Name = "btnSave";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnPay
             // 
             resources.ApplyResources(btnPay, "btnPay");
             btnPay.Name = "btnPay";
             btnPay.UseVisualStyleBackColor = true;
+            btnPay.Click += btnPay_Click;
             // 
             // FrmMain
             // 
@@ -368,15 +350,12 @@ namespace CoffeeManager
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnX;
         private System.Windows.Forms.FlowLayoutPanel flpRight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn drink;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unitPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantily;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idBill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intoMoney;
-        private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private System.Windows.Forms.Button BtnAddPr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantily;
+        private System.Windows.Forms.DataGridViewTextBoxColumn branch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description;
     }
 }
 

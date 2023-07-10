@@ -1,5 +1,5 @@
 ﻿using Repository.Models;
-using Repository.Services;
+using Repository.Service;
 using System;
 using System.Collections.Generic;
 using System.Data;

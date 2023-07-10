@@ -1,11 +1,16 @@
-﻿using Repository.Models;
-using Repository.Services;
+﻿using Microsoft.Identity.Client;
 using System;
 using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Principal;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Repository.Models;
+using Repository.Service;
 
 namespace CoffeeManager
 {
@@ -161,7 +166,7 @@ namespace CoffeeManager
 
         private void btnXProduct_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txt_Id.Text);
+            int  id = int.Parse(txt_Id.Text);
             var p = _productServices.GetAll().FirstOrDefault(p => p.ProductId.Equals(id));
             if (p != null)
             {
@@ -174,11 +179,6 @@ namespace CoffeeManager
             {
                 MessageBox.Show("No record found with given ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 
