@@ -133,7 +133,7 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(255, 224, 192);
+            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             flowLayoutPanel1.Controls.Add(btnDelete);
             flowLayoutPanel1.Controls.Add(btnUpdate);
             flowLayoutPanel1.Controls.Add(btnAdd);
@@ -219,7 +219,7 @@
             // 
             // Detail
             // 
-            Detail.BackColor = System.Drawing.Color.PaleTurquoise;
+            Detail.BackColor = System.Drawing.Color.Silver;
             Detail.Controls.Add(dtpDateEarn);
             Detail.Controls.Add(label3);
             Detail.Controls.Add(txtStaffID);
@@ -332,6 +332,7 @@
             // 
             // groupBox7
             // 
+            groupBox7.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             groupBox7.Controls.Add(btnSearch);
             groupBox7.Controls.Add(label7);
             groupBox7.Controls.Add(label6);

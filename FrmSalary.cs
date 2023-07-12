@@ -131,7 +131,7 @@ namespace ProjectPRN
             {
                 GetSalaryDetail = salary,
             };
-            
+
             if (frmUpdateSalary.ShowDialog() == DialogResult.OK)
             {
                 this.Hide();
