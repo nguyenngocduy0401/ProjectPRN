@@ -1,4 +1,5 @@
-﻿using Repository.Models;
+﻿using ProjectPRN;
+using Repository.Models;
 using Repository.Services;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,6 @@ namespace ProjectPRN211
             InitializeComponent();
             txtID.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             btnAddShift.Enabled = false;
             var listStaff = _staffServices
                 .GetAll()
@@ -37,7 +37,8 @@ namespace ProjectPRN211
                           p.Salary,
                           sr.RoleName,
                           p.Phone,
-                          p.OffShift
+                          p.OffShift,
+                          p.Status
                       }
                       )
                 //.Select(p => new
@@ -63,6 +64,9 @@ namespace ProjectPRN211
             cbRole.ValueMember = "Value";
             cbRole.DisplayMember = "Text";
             cbRole.DataSource = listStaffRole;
+
+            cbStatus.Items.Add("Inactive");
+            cbStatus.Items.Add("Active");
         }
 
         private void dgvStaffList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -70,7 +74,6 @@ namespace ProjectPRN211
             btnCreate.Enabled = false;
             btnSearch.Enabled = true;
             btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
             btnAddShift.Enabled = true;
             var staffId = dgvStaffList.Rows[e.RowIndex].Cells[0].Value;
             var obj = _staffServices
@@ -89,6 +92,7 @@ namespace ProjectPRN211
                 numShiftOff.Value = obj.OffShift;
                 dtBirthday.Text = obj.BirthDay.ToString();
                 cbRole.SelectedValue = obj.RoleId;
+                cbStatus.SelectedIndex = obj.Status;
             }
         }
         private void resetState()
@@ -117,7 +121,6 @@ namespace ProjectPRN211
             btnCreate.Enabled = true;
             btnSearch.Enabled = true;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             btnAddShift.Enabled = false;
 
             txtID.Text = "";
@@ -148,6 +151,7 @@ namespace ProjectPRN211
                 staff.BirthDay = dtBirthday.Value.Date;
                 staff.OffShift = (int)numShiftOff.Value;
                 staff.Salary = int.Parse(txtHourlyWage.Text);
+                staff.Status = cbStatus.SelectedIndex;
                 _staffServices.Create(staff);
                 MessageBox.Show("Create successful!", "Announcement", MessageBoxButtons.OK);
                 resetState();
@@ -188,6 +192,7 @@ namespace ProjectPRN211
                     obj.BirthDay = dtBirthday.Value.Date;
                     obj.Salary = int.Parse(txtHourlyWage.Text);
                     obj.RoleId = int.Parse(cbRole.SelectedValue.ToString());
+                    obj.Status = cbStatus.SelectedIndex;
 
                     _staffServices.Update(obj);
                     MessageBox.Show("Update successful!", "Announcement", MessageBoxButtons.OK);
@@ -199,23 +204,6 @@ namespace ProjectPRN211
                     MessageBox.Show(message, "Announcement", MessageBoxButtons.OK);
                 }
             }
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            var obj = _staffServices
-                .GetAll()
-                .Where(
-                        p => p.StaffId.Equals(int.Parse(txtID.Text))
-                        )
-                .FirstOrDefault();
-
-            if (obj != null)
-            {
-                _staffServices.Delete(obj);
-                MessageBox.Show("Delete successful!", "Announcement", MessageBoxButtons.OK);
-            }
-            resetState();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -254,5 +242,29 @@ namespace ProjectPRN211
             shiftMana.ShowDialog();
         }
 
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+            int rowIndex = dgvStaffList.CurrentRow.Index;
+
+            var staff = (_staffServices.GetAll())[rowIndex];
+            FrmSalary frmSalary = new FrmSalary
+            {
+                GetStaff = (_staffServices.GetAll())[rowIndex]
+                ,
+
+            };
+
+
+            frmSalary.FormClosed += FrmSalary_FormClosed;
+
+            this.Enabled = false;
+            frmSalary.Show();
+        }
+        private void FrmSalary_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Enabled = true;
+            this.Show(); // Hiển thị lại form Admin
+        }
     }
+
 }

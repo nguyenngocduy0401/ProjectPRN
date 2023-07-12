@@ -31,27 +31,29 @@
             dgvStaffList = new System.Windows.Forms.DataGridView();
             lbStaffList = new System.Windows.Forms.Label();
             gbInformation = new System.Windows.Forms.GroupBox();
-            txtHourlyWage = new System.Windows.Forms.TextBox();
-            cbRole = new System.Windows.Forms.ComboBox();
-            numShiftOff = new System.Windows.Forms.NumericUpDown();
-            dtBirthday = new System.Windows.Forms.DateTimePicker();
+            cbStatus = new System.Windows.Forms.ComboBox();
             txtPhone = new System.Windows.Forms.TextBox();
+            lbStatus = new System.Windows.Forms.Label();
             txtEmail = new System.Windows.Forms.TextBox();
+            txtHourlyWage = new System.Windows.Forms.TextBox();
             lbEmail = new System.Windows.Forms.Label();
-            lbRole = new System.Windows.Forms.Label();
-            lbShiftOff = new System.Windows.Forms.Label();
-            lbHourlyWage = new System.Windows.Forms.Label();
+            cbRole = new System.Windows.Forms.ComboBox();
             txtName = new System.Windows.Forms.TextBox();
-            lbBirthday = new System.Windows.Forms.Label();
+            numShiftOff = new System.Windows.Forms.NumericUpDown();
             lbPhone = new System.Windows.Forms.Label();
+            dtBirthday = new System.Windows.Forms.DateTimePicker();
             lbName = new System.Windows.Forms.Label();
+            lbRole = new System.Windows.Forms.Label();
             lbID = new System.Windows.Forms.Label();
+            lbShiftOff = new System.Windows.Forms.Label();
             txtID = new System.Windows.Forms.TextBox();
+            lbHourlyWage = new System.Windows.Forms.Label();
+            lbBirthday = new System.Windows.Forms.Label();
             btnCreate = new System.Windows.Forms.Button();
             btnUpdate = new System.Windows.Forms.Button();
-            btnDelete = new System.Windows.Forms.Button();
             btnSearch = new System.Windows.Forms.Button();
             gbFunction = new System.Windows.Forms.GroupBox();
+            btnSalary = new System.Windows.Forms.Button();
             btnAddShift = new System.Windows.Forms.Button();
             btnShow = new System.Windows.Forms.Button();
             txtFindName = new System.Windows.Forms.TextBox();
@@ -64,7 +66,7 @@
             // dgvStaffList
             // 
             dgvStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStaffList.Location = new System.Drawing.Point(-12, 309);
+            dgvStaffList.Location = new System.Drawing.Point(12, 309);
             dgvStaffList.Name = "dgvStaffList";
             dgvStaffList.RowHeadersWidth = 51;
             dgvStaffList.RowTemplate.Height = 29;
@@ -85,22 +87,24 @@
             // 
             // gbInformation
             // 
-            gbInformation.Controls.Add(txtHourlyWage);
-            gbInformation.Controls.Add(cbRole);
-            gbInformation.Controls.Add(numShiftOff);
-            gbInformation.Controls.Add(dtBirthday);
+            gbInformation.Controls.Add(cbStatus);
             gbInformation.Controls.Add(txtPhone);
+            gbInformation.Controls.Add(lbStatus);
             gbInformation.Controls.Add(txtEmail);
+            gbInformation.Controls.Add(txtHourlyWage);
             gbInformation.Controls.Add(lbEmail);
-            gbInformation.Controls.Add(lbRole);
-            gbInformation.Controls.Add(lbShiftOff);
-            gbInformation.Controls.Add(lbHourlyWage);
+            gbInformation.Controls.Add(cbRole);
             gbInformation.Controls.Add(txtName);
-            gbInformation.Controls.Add(lbBirthday);
+            gbInformation.Controls.Add(numShiftOff);
             gbInformation.Controls.Add(lbPhone);
+            gbInformation.Controls.Add(dtBirthday);
             gbInformation.Controls.Add(lbName);
+            gbInformation.Controls.Add(lbRole);
             gbInformation.Controls.Add(lbID);
+            gbInformation.Controls.Add(lbShiftOff);
             gbInformation.Controls.Add(txtID);
+            gbInformation.Controls.Add(lbHourlyWage);
+            gbInformation.Controls.Add(lbBirthday);
             gbInformation.Location = new System.Drawing.Point(12, 12);
             gbInformation.Name = "gbInformation";
             gbInformation.Size = new System.Drawing.Size(669, 256);
@@ -108,40 +112,13 @@
             gbInformation.TabStop = false;
             gbInformation.Text = "Information";
             // 
-            // txtHourlyWage
+            // cbStatus
             // 
-            txtHourlyWage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            txtHourlyWage.Location = new System.Drawing.Point(485, 102);
-            txtHourlyWage.Name = "txtHourlyWage";
-            txtHourlyWage.Size = new System.Drawing.Size(169, 27);
-            txtHourlyWage.TabIndex = 20;
-            // 
-            // cbRole
-            // 
-            cbRole.FormattingEnabled = true;
-            cbRole.Location = new System.Drawing.Point(485, 215);
-            cbRole.Name = "cbRole";
-            cbRole.Size = new System.Drawing.Size(169, 28);
-            cbRole.TabIndex = 19;
-            // 
-            // numShiftOff
-            // 
-            numShiftOff.Location = new System.Drawing.Point(485, 161);
-            numShiftOff.Name = "numShiftOff";
-            numShiftOff.Size = new System.Drawing.Size(169, 27);
-            numShiftOff.TabIndex = 18;
-            // 
-            // dtBirthday
-            // 
-            dtBirthday.CustomFormat = "";
-            dtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtBirthday.Location = new System.Drawing.Point(485, 37);
-            dtBirthday.MaxDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
-            dtBirthday.MinDate = new System.DateTime(1980, 1, 1, 0, 0, 0, 0);
-            dtBirthday.Name = "dtBirthday";
-            dtBirthday.Size = new System.Drawing.Size(169, 27);
-            dtBirthday.TabIndex = 17;
-            dtBirthday.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
+            cbStatus.FormattingEnabled = true;
+            cbStatus.Location = new System.Drawing.Point(490, 211);
+            cbStatus.Name = "cbStatus";
+            cbStatus.Size = new System.Drawing.Size(169, 28);
+            cbStatus.TabIndex = 42;
             // 
             // txtPhone
             // 
@@ -152,6 +129,15 @@
             txtPhone.Size = new System.Drawing.Size(257, 27);
             txtPhone.TabIndex = 16;
             // 
+            // lbStatus
+            // 
+            lbStatus.AutoSize = true;
+            lbStatus.Location = new System.Drawing.Point(381, 219);
+            lbStatus.Name = "lbStatus";
+            lbStatus.Size = new System.Drawing.Size(49, 20);
+            lbStatus.TabIndex = 41;
+            lbStatus.Text = "Status";
+            // 
             // txtEmail
             // 
             txtEmail.BackColor = System.Drawing.SystemColors.Window;
@@ -160,6 +146,14 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new System.Drawing.Size(257, 27);
             txtEmail.TabIndex = 15;
+            // 
+            // txtHourlyWage
+            // 
+            txtHourlyWage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            txtHourlyWage.Location = new System.Drawing.Point(490, 74);
+            txtHourlyWage.Name = "txtHourlyWage";
+            txtHourlyWage.Size = new System.Drawing.Size(169, 27);
+            txtHourlyWage.TabIndex = 40;
             // 
             // lbEmail
             // 
@@ -170,32 +164,13 @@
             lbEmail.TabIndex = 12;
             lbEmail.Text = "Email";
             // 
-            // lbRole
+            // cbRole
             // 
-            lbRole.AutoSize = true;
-            lbRole.Location = new System.Drawing.Point(376, 216);
-            lbRole.Name = "lbRole";
-            lbRole.Size = new System.Drawing.Size(39, 20);
-            lbRole.TabIndex = 14;
-            lbRole.Text = "Role";
-            // 
-            // lbShiftOff
-            // 
-            lbShiftOff.AutoSize = true;
-            lbShiftOff.Location = new System.Drawing.Point(376, 164);
-            lbShiftOff.Name = "lbShiftOff";
-            lbShiftOff.Size = new System.Drawing.Size(64, 20);
-            lbShiftOff.TabIndex = 13;
-            lbShiftOff.Text = "Shift Off";
-            // 
-            // lbHourlyWage
-            // 
-            lbHourlyWage.AutoSize = true;
-            lbHourlyWage.Location = new System.Drawing.Point(376, 105);
-            lbHourlyWage.Name = "lbHourlyWage";
-            lbHourlyWage.Size = new System.Drawing.Size(95, 20);
-            lbHourlyWage.TabIndex = 11;
-            lbHourlyWage.Text = "Hourly Wage";
+            cbRole.FormattingEnabled = true;
+            cbRole.Location = new System.Drawing.Point(490, 168);
+            cbRole.Name = "cbRole";
+            cbRole.Size = new System.Drawing.Size(169, 28);
+            cbRole.TabIndex = 39;
             // 
             // txtName
             // 
@@ -206,14 +181,12 @@
             txtName.Size = new System.Drawing.Size(257, 27);
             txtName.TabIndex = 10;
             // 
-            // lbBirthday
+            // numShiftOff
             // 
-            lbBirthday.AutoSize = true;
-            lbBirthday.Location = new System.Drawing.Point(376, 42);
-            lbBirthday.Name = "lbBirthday";
-            lbBirthday.Size = new System.Drawing.Size(68, 20);
-            lbBirthday.TabIndex = 9;
-            lbBirthday.Text = "Birthday ";
+            numShiftOff.Location = new System.Drawing.Point(490, 123);
+            numShiftOff.Name = "numShiftOff";
+            numShiftOff.Size = new System.Drawing.Size(169, 27);
+            numShiftOff.TabIndex = 38;
             // 
             // lbPhone
             // 
@@ -224,6 +197,18 @@
             lbPhone.TabIndex = 8;
             lbPhone.Text = "Phone";
             // 
+            // dtBirthday
+            // 
+            dtBirthday.CustomFormat = "";
+            dtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dtBirthday.Location = new System.Drawing.Point(490, 28);
+            dtBirthday.MaxDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
+            dtBirthday.MinDate = new System.DateTime(1980, 1, 1, 0, 0, 0, 0);
+            dtBirthday.Name = "dtBirthday";
+            dtBirthday.Size = new System.Drawing.Size(169, 27);
+            dtBirthday.TabIndex = 37;
+            dtBirthday.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
+            // 
             // lbName
             // 
             lbName.AutoSize = true;
@@ -232,6 +217,15 @@
             lbName.Size = new System.Drawing.Size(76, 20);
             lbName.TabIndex = 7;
             lbName.Text = "Full Name";
+            // 
+            // lbRole
+            // 
+            lbRole.AutoSize = true;
+            lbRole.Location = new System.Drawing.Point(381, 173);
+            lbRole.Name = "lbRole";
+            lbRole.Size = new System.Drawing.Size(39, 20);
+            lbRole.TabIndex = 36;
+            lbRole.Text = "Role";
             // 
             // lbID
             // 
@@ -242,6 +236,15 @@
             lbID.TabIndex = 6;
             lbID.Text = "ID";
             // 
+            // lbShiftOff
+            // 
+            lbShiftOff.AutoSize = true;
+            lbShiftOff.Location = new System.Drawing.Point(381, 126);
+            lbShiftOff.Name = "lbShiftOff";
+            lbShiftOff.Size = new System.Drawing.Size(64, 20);
+            lbShiftOff.TabIndex = 35;
+            lbShiftOff.Text = "Shift Off";
+            // 
             // txtID
             // 
             txtID.BackColor = System.Drawing.SystemColors.Window;
@@ -250,6 +253,24 @@
             txtID.Name = "txtID";
             txtID.Size = new System.Drawing.Size(257, 27);
             txtID.TabIndex = 0;
+            // 
+            // lbHourlyWage
+            // 
+            lbHourlyWage.AutoSize = true;
+            lbHourlyWage.Location = new System.Drawing.Point(381, 77);
+            lbHourlyWage.Name = "lbHourlyWage";
+            lbHourlyWage.Size = new System.Drawing.Size(95, 20);
+            lbHourlyWage.TabIndex = 34;
+            lbHourlyWage.Text = "Hourly Wage";
+            // 
+            // lbBirthday
+            // 
+            lbBirthday.AutoSize = true;
+            lbBirthday.Location = new System.Drawing.Point(381, 33);
+            lbBirthday.Name = "lbBirthday";
+            lbBirthday.Size = new System.Drawing.Size(68, 20);
+            lbBirthday.TabIndex = 33;
+            lbBirthday.Text = "Birthday ";
             // 
             // btnCreate
             // 
@@ -271,16 +292,6 @@
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
             // 
-            // btnDelete
-            // 
-            btnDelete.Location = new System.Drawing.Point(198, 102);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new System.Drawing.Size(94, 29);
-            btnDelete.TabIndex = 5;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += btnDelete_Click;
-            // 
             // btnSearch
             // 
             btnSearch.Location = new System.Drawing.Point(216, 215);
@@ -293,12 +304,12 @@
             // 
             // gbFunction
             // 
+            gbFunction.Controls.Add(btnSalary);
             gbFunction.Controls.Add(btnAddShift);
             gbFunction.Controls.Add(btnShow);
             gbFunction.Controls.Add(txtFindName);
             gbFunction.Controls.Add(btnCreate);
             gbFunction.Controls.Add(btnSearch);
-            gbFunction.Controls.Add(btnDelete);
             gbFunction.Controls.Add(btnUpdate);
             gbFunction.Location = new System.Drawing.Point(687, 12);
             gbFunction.Name = "gbFunction";
@@ -306,6 +317,16 @@
             gbFunction.TabIndex = 7;
             gbFunction.TabStop = false;
             gbFunction.Text = "Function";
+            // 
+            // btnSalary
+            // 
+            btnSalary.Location = new System.Drawing.Point(198, 101);
+            btnSalary.Name = "btnSalary";
+            btnSalary.Size = new System.Drawing.Size(94, 29);
+            btnSalary.TabIndex = 11;
+            btnSalary.Text = "Salary";
+            btnSalary.UseVisualStyleBackColor = true;
+            btnSalary.Click += btnSalary_Click;
             // 
             // btnAddShift
             // 
@@ -338,7 +359,7 @@
             txtFindName.Size = new System.Drawing.Size(179, 27);
             txtFindName.TabIndex = 7;
             // 
-            // Admin
+            // FrmManageStaff
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -347,7 +368,7 @@
             Controls.Add(gbInformation);
             Controls.Add(lbStaffList);
             Controls.Add(dgvStaffList);
-            Name = "Admin";
+            Name = "FrmManageStaff";
             Text = "Admin";
             ((System.ComponentModel.ISupportInitialize)dgvStaffList).EndInit();
             gbInformation.ResumeLayout(false);
@@ -364,29 +385,31 @@
         private System.Windows.Forms.DataGridView dgvStaffList;
         private System.Windows.Forms.Label lbStaffList;
         private System.Windows.Forms.GroupBox gbInformation;
-        private System.Windows.Forms.Label lbBirthday;
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lbRole;
-        private System.Windows.Forms.Label lbShiftOff;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.Label lbHourlyWage;
-        private System.Windows.Forms.DateTimePicker dtBirthday;
         private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.TextBox txtHourlyWage;
-        private System.Windows.Forms.ComboBox cbRole;
-        private System.Windows.Forms.NumericUpDown numShiftOff;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox gbFunction;
         private System.Windows.Forms.TextBox txtFindName;
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnAddShift;
+        private System.Windows.Forms.Button btnSalary;
+        private System.Windows.Forms.ComboBox cbStatus;
+        private System.Windows.Forms.Label lbStatus;
+        private System.Windows.Forms.TextBox txtHourlyWage;
+        private System.Windows.Forms.ComboBox cbRole;
+        private System.Windows.Forms.NumericUpDown numShiftOff;
+        private System.Windows.Forms.DateTimePicker dtBirthday;
+        private System.Windows.Forms.Label lbRole;
+        private System.Windows.Forms.Label lbShiftOff;
+        private System.Windows.Forms.Label lbHourlyWage;
+        private System.Windows.Forms.Label lbBirthday;
     }
 }
