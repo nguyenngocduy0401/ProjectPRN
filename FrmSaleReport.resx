@@ -57,142 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
-    <value>btnSearch</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;year.Name" xml:space="preserve">
-    <value>year</value>
-  </data>
-  <data name="&gt;&gt;year.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;year.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;year.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;month.Name" xml:space="preserve">
-    <value>month</value>
-  </data>
-  <data name="&gt;&gt;month.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;month.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;month.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;day.Name" xml:space="preserve">
-    <value>day</value>
-  </data>
-  <data name="&gt;&gt;day.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;day.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;day.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lbViewBy.Name" xml:space="preserve">
-    <value>lbViewBy</value>
-  </data>
-  <data name="&gt;&gt;lbViewBy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbViewBy.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;lbViewBy.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;dtpDay.Name" xml:space="preserve">
-    <value>dtpDay</value>
-  </data>
-  <data name="&gt;&gt;dtpDay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtpDay.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;dtpDay.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;dtpMonth.Name" xml:space="preserve">
-    <value>dtpMonth</value>
-  </data>
-  <data name="&gt;&gt;dtpMonth.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtpMonth.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;dtpMonth.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;dtpYear.Name" xml:space="preserve">
-    <value>dtpYear</value>
-  </data>
-  <data name="&gt;&gt;dtpYear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtpYear.Parent" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;dtpYear.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GrbDateTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GrbDateTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GrbDateTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="GrbDateTime.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="GrbDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>637, 127</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GrbDateTime.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;GrbDateTime.Name" xml:space="preserve">
-    <value>GrbDateTime</value>
-  </data>
-  <data name="&gt;&gt;GrbDateTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrbDateTime.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;GrbDateTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>268, 88</value>
   </data>
   <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
@@ -331,6 +203,7 @@
   <data name="dtpDay.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 76</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dtpDay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
@@ -418,6 +291,37 @@
   <data name="&gt;&gt;dtpYear.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GrbDateTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="GrbDateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="GrbDateTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="GrbDateTime.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="GrbDateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>637, 127</value>
+  </data>
+  <data name="GrbDateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;GrbDateTime.Name" xml:space="preserve">
+    <value>GrbDateTime</value>
+  </data>
+  <data name="&gt;&gt;GrbDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrbDateTime.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;GrbDateTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -448,9 +352,18 @@
   <metadata name="orderID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="orderID.HeaderText" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
   <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="date.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="date.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
   <data name="dgvOrder.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 133</value>
   </data>
@@ -471,54 +384,6 @@
   </data>
   <data name="&gt;&gt;dgvOrder.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <metadata name="orderID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="orderID.HeaderText" xml:space="preserve">
-    <value>Order ID</value>
-  </data>
-  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="date.HeaderText" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="date.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <metadata name="productId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dgvDetails.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 167</value>
-  </data>
-  <data name="dgvDetails.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 340</value>
-  </data>
-  <data name="dgvDetails.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dgvDetails.Name" xml:space="preserve">
-    <value>dgvDetails</value>
-  </data>
-  <data name="&gt;&gt;dgvDetails.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvDetails.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgvDetails.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <metadata name="productId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -546,6 +411,27 @@
   </metadata>
   <data name="quantity.HeaderText" xml:space="preserve">
     <value>Quantity</value>
+  </data>
+  <data name="dgvDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 167</value>
+  </data>
+  <data name="dgvDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 340</value>
+  </data>
+  <data name="dgvDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvDetails.Name" xml:space="preserve">
+    <value>dgvDetails</value>
+  </data>
+  <data name="&gt;&gt;dgvDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDetails.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvDetails.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="ldDetails.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

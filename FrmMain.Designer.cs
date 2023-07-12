@@ -33,20 +33,11 @@ namespace CoffeeManager
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             pnlRight = new System.Windows.Forms.Panel();
             flpRight = new System.Windows.Forms.FlowLayoutPanel();
-            groupBox3 = new System.Windows.Forms.GroupBox();
-            BtnAddPr = new System.Windows.Forms.Button();
-            btnX = new System.Windows.Forms.Button();
-            txtSearch = new System.Windows.Forms.TextBox();
             groupBox7 = new System.Windows.Forms.GroupBox();
             cbbMenu = new System.Windows.Forms.ComboBox();
             pnlCenter = new System.Windows.Forms.Panel();
             groupBox6 = new System.Windows.Forms.GroupBox();
             dgvMain = new System.Windows.Forms.DataGridView();
-            name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            quantily = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             panel1 = new System.Windows.Forms.Panel();
             groupBox8 = new System.Windows.Forms.GroupBox();
             txtDescription = new System.Windows.Forms.TextBox();
@@ -61,8 +52,12 @@ namespace CoffeeManager
             flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             btnSave = new System.Windows.Forms.Button();
             btnPay = new System.Windows.Forms.Button();
+            name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            quantily = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             pnlRight.SuspendLayout();
-            groupBox3.SuspendLayout();
             groupBox7.SuspendLayout();
             pnlCenter.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -78,7 +73,6 @@ namespace CoffeeManager
             resources.ApplyResources(pnlRight, "pnlRight");
             pnlRight.BackColor = System.Drawing.Color.FromArgb(255, 224, 192);
             pnlRight.Controls.Add(flpRight);
-            pnlRight.Controls.Add(groupBox3);
             pnlRight.Controls.Add(groupBox7);
             pnlRight.Name = "pnlRight";
             // 
@@ -87,35 +81,6 @@ namespace CoffeeManager
             resources.ApplyResources(flpRight, "flpRight");
             flpRight.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
             flpRight.Name = "flpRight";
-            // 
-            // groupBox3
-            // 
-            resources.ApplyResources(groupBox3, "groupBox3");
-            groupBox3.BackColor = System.Drawing.Color.Silver;
-            groupBox3.Controls.Add(BtnAddPr);
-            groupBox3.Controls.Add(btnX);
-            groupBox3.Controls.Add(txtSearch);
-            groupBox3.ForeColor = System.Drawing.Color.Blue;
-            groupBox3.Name = "groupBox3";
-            groupBox3.TabStop = false;
-            // 
-            // BtnAddPr
-            // 
-            resources.ApplyResources(BtnAddPr, "BtnAddPr");
-            BtnAddPr.Name = "BtnAddPr";
-            BtnAddPr.UseVisualStyleBackColor = true;
-            // 
-            // btnX
-            // 
-            resources.ApplyResources(btnX, "btnX");
-            btnX.ForeColor = System.Drawing.Color.Red;
-            btnX.Name = "btnX";
-            btnX.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            resources.ApplyResources(txtSearch, "txtSearch");
-            txtSearch.Name = "txtSearch";
             // 
             // groupBox7
             // 
@@ -132,6 +97,7 @@ namespace CoffeeManager
             cbbMenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbbMenu.FormattingEnabled = true;
             cbbMenu.Name = "cbbMenu";
+            cbbMenu.SelectedIndexChanged += cbbMenu_SelectedIndexChanged;
             // 
             // pnlCenter
             // 
@@ -169,39 +135,6 @@ namespace CoffeeManager
             dgvMain.RowHeadersVisible = false;
             dgvMain.RowTemplate.Height = 30;
             dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // name
-            // 
-            name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            name.DataPropertyName = "name";
-            resources.ApplyResources(name, "name");
-            name.Name = "name";
-            name.ReadOnly = true;
-            // 
-            // price
-            // 
-            price.DataPropertyName = "price";
-            resources.ApplyResources(price, "price");
-            price.Name = "price";
-            // 
-            // quantily
-            // 
-            quantily.DataPropertyName = "quantity";
-            resources.ApplyResources(quantily, "quantily");
-            quantily.Name = "quantily";
-            quantily.ReadOnly = true;
-            // 
-            // branch
-            // 
-            branch.DataPropertyName = "branch";
-            resources.ApplyResources(branch, "branch");
-            branch.Name = "branch";
-            // 
-            // description
-            // 
-            description.DataPropertyName = "description";
-            resources.ApplyResources(description, "description");
-            description.Name = "description";
             // 
             // panel1
             // 
@@ -302,6 +235,42 @@ namespace CoffeeManager
             btnPay.UseVisualStyleBackColor = true;
             btnPay.Click += btnPay_Click;
             // 
+            // name
+            // 
+            name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            name.DataPropertyName = "name";
+            resources.ApplyResources(name, "name");
+            name.Name = "name";
+            name.ReadOnly = true;
+            // 
+            // price
+            // 
+            price.DataPropertyName = "price";
+            resources.ApplyResources(price, "price");
+            price.Name = "price";
+            price.ReadOnly = true;
+            // 
+            // quantily
+            // 
+            quantily.DataPropertyName = "quantity";
+            resources.ApplyResources(quantily, "quantily");
+            quantily.Name = "quantily";
+            quantily.ReadOnly = true;
+            // 
+            // branch
+            // 
+            branch.DataPropertyName = "branch";
+            resources.ApplyResources(branch, "branch");
+            branch.Name = "branch";
+            branch.ReadOnly = true;
+            // 
+            // description
+            // 
+            description.DataPropertyName = "description";
+            resources.ApplyResources(description, "description");
+            description.Name = "description";
+            description.ReadOnly = true;
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -311,8 +280,6 @@ namespace CoffeeManager
             Name = "FrmMain";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
             pnlRight.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             groupBox7.ResumeLayout(false);
             pnlCenter.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
@@ -346,11 +313,7 @@ namespace CoffeeManager
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnX;
         private System.Windows.Forms.FlowLayoutPanel flpRight;
-        private System.Windows.Forms.Button BtnAddPr;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantily;

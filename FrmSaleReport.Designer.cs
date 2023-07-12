@@ -152,27 +152,32 @@ namespace CoffeeManager
             dgvDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { productId, name, price, quantity });
             resources.ApplyResources(dgvDetails, "dgvDetails");
             dgvDetails.Name = "dgvDetails";
+            dgvDetails.ReadOnly = true;
             dgvDetails.RowTemplate.Height = 25;
             // 
             // productId
             // 
             resources.ApplyResources(productId, "productId");
             productId.Name = "productId";
+            productId.ReadOnly = true;
             // 
             // name
             // 
             resources.ApplyResources(name, "name");
             name.Name = "name";
+            name.ReadOnly = true;
             // 
             // price
             // 
             resources.ApplyResources(price, "price");
             price.Name = "price";
+            price.ReadOnly = true;
             // 
             // quantity
             // 
             resources.ApplyResources(quantity, "quantity");
             quantity.Name = "quantity";
+            quantity.ReadOnly = true;
             // 
             // ldDetails
             // 

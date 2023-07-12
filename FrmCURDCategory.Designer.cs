@@ -43,12 +43,11 @@
             // dgvListCatetory
             // 
             dgvListCatetory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListCatetory.Location = new System.Drawing.Point(12, 98);
-            dgvListCatetory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dgvListCatetory.Location = new System.Drawing.Point(12, 12);
             dgvListCatetory.Name = "dgvListCatetory";
             dgvListCatetory.RowHeadersWidth = 51;
             dgvListCatetory.RowTemplate.Height = 25;
-            dgvListCatetory.Size = new System.Drawing.Size(347, 260);
+            dgvListCatetory.Size = new System.Drawing.Size(304, 195);
             dgvListCatetory.TabIndex = 34;
             dgvListCatetory.CellDoubleClick += dgvListCatetory_CellDoubleClick;
             // 
@@ -57,18 +56,19 @@
             blMaHang.AutoSize = true;
             blMaHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             blMaHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            blMaHang.Location = new System.Drawing.Point(391, 98);
-            blMaHang.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            blMaHang.Location = new System.Drawing.Point(344, 12);
+            blMaHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             blMaHang.Name = "blMaHang";
-            blMaHang.Size = new System.Drawing.Size(111, 25);
+            blMaHang.Size = new System.Drawing.Size(86, 20);
             blMaHang.TabIndex = 36;
             blMaHang.Text = "Type code:";
             // 
             // txtMaHang
             // 
-            txtMaHang.Location = new System.Drawing.Point(391, 154);
+            txtMaHang.Location = new System.Drawing.Point(344, 54);
+            txtMaHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             txtMaHang.Name = "txtMaHang";
-            txtMaHang.Size = new System.Drawing.Size(122, 27);
+            txtMaHang.Size = new System.Drawing.Size(107, 23);
             txtMaHang.TabIndex = 37;
             // 
             // lbTenHang
@@ -76,18 +76,19 @@
             lbTenHang.AutoSize = true;
             lbTenHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbTenHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            lbTenHang.Location = new System.Drawing.Point(391, 211);
-            lbTenHang.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            lbTenHang.Location = new System.Drawing.Point(344, 96);
+            lbTenHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             lbTenHang.Name = "lbTenHang";
-            lbTenHang.Size = new System.Drawing.Size(117, 25);
+            lbTenHang.Size = new System.Drawing.Size(91, 20);
             lbTenHang.TabIndex = 38;
             lbTenHang.Text = "Type name:";
             // 
             // txtTenHang
             // 
-            txtTenHang.Location = new System.Drawing.Point(391, 266);
+            txtTenHang.Location = new System.Drawing.Point(344, 138);
+            txtTenHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             txtTenHang.Name = "txtTenHang";
-            txtTenHang.Size = new System.Drawing.Size(184, 27);
+            txtTenHang.Size = new System.Drawing.Size(162, 23);
             txtTenHang.TabIndex = 39;
             // 
             // btnAccept
@@ -96,10 +97,10 @@
             btnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnAccept.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnAccept.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnAccept.Location = new System.Drawing.Point(647, 98);
-            btnAccept.Margin = new System.Windows.Forms.Padding(5);
+            btnAccept.Location = new System.Drawing.Point(565, 23);
+            btnAccept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             btnAccept.Name = "btnAccept";
-            btnAccept.Size = new System.Drawing.Size(139, 36);
+            btnAccept.Size = new System.Drawing.Size(122, 27);
             btnAccept.TabIndex = 40;
             btnAccept.Text = "Create";
             btnAccept.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -112,10 +113,10 @@
             btCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btCapNhat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btCapNhat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btCapNhat.Location = new System.Drawing.Point(647, 190);
-            btCapNhat.Margin = new System.Windows.Forms.Padding(5);
+            btCapNhat.Location = new System.Drawing.Point(565, 91);
+            btCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             btCapNhat.Name = "btCapNhat";
-            btCapNhat.Size = new System.Drawing.Size(139, 36);
+            btCapNhat.Size = new System.Drawing.Size(122, 27);
             btCapNhat.TabIndex = 41;
             btCapNhat.Text = "Update";
             btCapNhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -128,10 +129,10 @@
             btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btXoa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btXoa.Location = new System.Drawing.Point(647, 266);
-            btXoa.Margin = new System.Windows.Forms.Padding(5);
+            btXoa.Location = new System.Drawing.Point(565, 149);
+            btXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             btXoa.Name = "btXoa";
-            btXoa.Size = new System.Drawing.Size(139, 36);
+            btXoa.Size = new System.Drawing.Size(122, 27);
             btXoa.TabIndex = 42;
             btXoa.Text = "Delete";
             btXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,10 +145,10 @@
             btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnCancel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnCancel.Location = new System.Drawing.Point(391, 322);
-            btnCancel.Margin = new System.Windows.Forms.Padding(5);
+            btnCancel.Location = new System.Drawing.Point(344, 190);
+            btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new System.Drawing.Size(139, 36);
+            btnCancel.Size = new System.Drawing.Size(122, 27);
             btnCancel.TabIndex = 43;
             btnCancel.Text = "Cancel";
             btnCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -156,9 +157,9 @@
             // 
             // FrmCURDCategory
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(700, 230);
             Controls.Add(btnCancel);
             Controls.Add(btXoa);
             Controls.Add(btCapNhat);
@@ -168,6 +169,7 @@
             Controls.Add(txtMaHang);
             Controls.Add(blMaHang);
             Controls.Add(dgvListCatetory);
+            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "FrmCURDCategory";
             Text = "FrmCURDCategory";
             ((System.ComponentModel.ISupportInitialize)dgvListCatetory).EndInit();

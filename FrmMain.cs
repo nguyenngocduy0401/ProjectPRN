@@ -28,7 +28,6 @@ namespace CoffeeManager
         private long _idTable = 0;
         private long _idProduct = 0;
         private long _idLogin = 0;
-        // Hình thức mua tại chỗ hay đem về
         private int _buttonProdutHeight = 70;
         private int _buttonProdutWidth = 120;
         private int _fontSizePr = 14;
@@ -36,22 +35,49 @@ namespace CoffeeManager
         private ProductServices _productServices = new ProductServices();
         private List<Product> listProductsOnOrder = new List<Product>();
         private OrderServices _orderServices = new OrderServices();
+        private CategoryServices _categoryServices = new CategoryServices();
         private OrderDetailsServices _orderDetailsServices = new OrderDetailsServices();
 
         public FrmMain()
         {
             InitializeComponent();
             LoadProduct();
+            LoadCategory();
         }
 
-
-        private string LoadProduct()
+        private string LoadCategory()
         {
             string message = "";
             try
             {
+                List<Category> listsCate = new List<Category>();
+                listsCate = _categoryServices.GetAll().ToList();
 
-                // long id = long.Parse(cbbMenu.SelectedValue.ToString());
+                var listCate = _categoryServices.GetAll().Select(p => new { Value = p.CategoryId, Text = p.CategoryName }).ToList();
+                var cateAll = new {
+                    Value = 0,
+                    Text = "All"
+                };
+                listCate.Insert(0,cateAll);
+                cbbMenu.ValueMember = ("Value");
+                cbbMenu.DisplayMember = ("Text");
+                cbbMenu.DataSource = listCate;
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+                goto TheEnd;
+            }
+
+        TheEnd:
+            return message;
+        }
+
+        private string LoadProduct()
+        {
+            string message = "chay";
+            try
+            {
                 List<Product> listProducts = new List<Product>();
                 listProducts = _productServices.GetAll().ToList();
                 flpRight.Controls.Clear();
@@ -79,11 +105,47 @@ namespace CoffeeManager
                 message = ex.Message;
                 goto TheEnd;
             }
-
         TheEnd:
             return message;
         }
-        public void btn_Product(object sender, EventArgs e)
+
+        private string LoadProductByID(int id)
+        {
+            string message = "chay";
+            try
+            {
+                List<Product> listProducts = new List<Product>();
+                listProducts = _productServices.GetAll().Where(p => p.CategoryId == id).ToList();
+                flpRight.Controls.Clear();
+
+                foreach (Product row in listProducts)
+                {
+                    Button bt = new Button
+                    {
+                        Text = row.Name.ToString(),
+                        Name = row.ProductId.ToString(),
+                        Tag = row.Price.ToString(),
+                        ImageAlign = ContentAlignment.TopCenter,
+                        Height = _buttonProdutHeight,
+                        Width = _buttonProdutWidth,
+                        BackColor = Color.White,
+                        TextAlign = ContentAlignment.BottomCenter,
+                        Font = new Font("Arial", _fontSizePr, FontStyle.Regular)
+                    };
+                    flpRight.Controls.Add(bt);
+                    bt.Click += btn_Product;
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+                goto TheEnd;
+            }
+        TheEnd:
+            return message;
+        }
+
+            public void btn_Product(object sender, EventArgs e)
         {
 
             Button btn = (Button)sender;
@@ -195,7 +257,28 @@ namespace CoffeeManager
             FrmSaleReport form = new FrmSaleReport();
             this.Hide();
             form.ShowDialog();
+            this.Close();
 
+        }
+
+        private void cbbMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var cateID = cbbMenu.SelectedValue.ToString();
+            int id;
+            if (string.IsNullOrEmpty(cateID))
+            {
+                id = 0;
+            }
+            else
+            {
+                id = int.Parse(cateID);
+            }
+            if (id == 0) {
+                LoadProduct();
+            } else
+            {
+                LoadProductByID(id);
+            }
         }
     }
 }

@@ -19,7 +19,6 @@ namespace CoffeeManager
     public partial class FrmSaleReport : Form
     {
         private DateTime _dateFrom = DateTime.Now;
-        //private DateTime _dateTo = DateTime.Now.AddDays(1);
         private DateTime _dateTo = DateTime.Now;
         private double _totalMoney = 0;
         private int _modeSearch = 0;
@@ -33,7 +32,7 @@ namespace CoffeeManager
         {
             InitializeComponent();
             List<Order> ordersList = new List<Order>();
-            ordersList = getOrderByDay(DateTime.Now);
+            ordersList = getAllOrder();
             if (ordersList.Count == 0)
             {
                 MessageBox.Show("Khong co order", "Notification", MessageBoxButtons.OK);
@@ -58,6 +57,13 @@ namespace CoffeeManager
         {
             List<Order> orders = new List<Order>();
             orders = _orderServices.GetAll().Where(p => p.Date.Equals(date.Date)).ToList();
+            return orders;
+        }
+
+        public List<Order> getAllOrder()
+        {
+            List<Order> orders = new List<Order>();
+            orders = _orderServices.GetAll().ToList();
             return orders;
         }
 
