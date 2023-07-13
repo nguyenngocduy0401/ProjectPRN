@@ -14,7 +14,7 @@ namespace ProjectPRN211
 {
     public partial class FrmManageStaffShift : Form
     {
-        ShiftDetailServicecs _shiftDetailServices = new ShiftDetailServicecs();
+        ShiftDetailServices _shiftDetailServices = new ShiftDetailServices();
         ShiftServices _shiftServices = new ShiftServices();
         StaffServices _staffServices = new StaffServices();
         DayServices _dayServices = new DayServices();
@@ -79,7 +79,7 @@ namespace ProjectPRN211
         private void btnCreate_Click(object sender, EventArgs e)
         {
             var shiftDetail = new ShiftDetail();
-            _shiftDetailServices = new ShiftDetailServicecs();
+            _shiftDetailServices = new ShiftDetailServices();
             try
             {
                 shiftDetail.StaffId = int.Parse(txtID.Text);

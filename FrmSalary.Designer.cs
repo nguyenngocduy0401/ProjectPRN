@@ -31,13 +31,6 @@
             pnlCenter = new System.Windows.Forms.Panel();
             groupBox6 = new System.Windows.Forms.GroupBox();
             dgvListSalary = new System.Windows.Forms.DataGridView();
-            panel1 = new System.Windows.Forms.Panel();
-            groupBox5 = new System.Windows.Forms.GroupBox();
-            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            btnDelete = new System.Windows.Forms.Button();
-            btnUpdate = new System.Windows.Forms.Button();
-            btnAdd = new System.Windows.Forms.Button();
-            btnPrint = new System.Windows.Forms.Button();
             pnlRight = new System.Windows.Forms.Panel();
             Detail = new System.Windows.Forms.Panel();
             dtpDateEarn = new System.Windows.Forms.DateTimePicker();
@@ -57,15 +50,22 @@
             label6 = new System.Windows.Forms.Label();
             dtpTo = new System.Windows.Forms.DateTimePicker();
             dtpFrom = new System.Windows.Forms.DateTimePicker();
+            groupBox5 = new System.Windows.Forms.GroupBox();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            btnPrint = new System.Windows.Forms.Button();
+            btnAdd = new System.Windows.Forms.Button();
+            btnUpdate = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
             pnlCenter.SuspendLayout();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListSalary).BeginInit();
-            panel1.SuspendLayout();
-            groupBox5.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
             pnlRight.SuspendLayout();
             Detail.SuspendLayout();
             groupBox7.SuspendLayout();
+            groupBox5.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pnlCenter
@@ -105,103 +105,6 @@
             dgvListSalary.TabIndex = 0;
             dgvListSalary.CellContentClick += dgvListSalary_CellContentClick;
             dgvListSalary.CellDoubleClick += dgvListSalary_CellDoubleClick;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(groupBox5);
-            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel1.Location = new System.Drawing.Point(0, 461);
-            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(645, 119);
-            panel1.TabIndex = 1;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(flowLayoutPanel1);
-            groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            groupBox5.ForeColor = System.Drawing.Color.Blue;
-            groupBox5.Location = new System.Drawing.Point(0, 11);
-            groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBox5.Size = new System.Drawing.Size(645, 108);
-            groupBox5.TabIndex = 0;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Manipulation:";
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
-            flowLayoutPanel1.Controls.Add(btnDelete);
-            flowLayoutPanel1.Controls.Add(btnUpdate);
-            flowLayoutPanel1.Controls.Add(btnAdd);
-            flowLayoutPanel1.Controls.Add(btnPrint);
-            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            flowLayoutPanel1.Location = new System.Drawing.Point(4, 22);
-            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            flowLayoutPanel1.MinimumSize = new System.Drawing.Size(700, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new System.Drawing.Size(700, 83);
-            flowLayoutPanel1.TabIndex = 0;
-            flowLayoutPanel1.WrapContents = false;
-            // 
-            // btnDelete
-            // 
-            btnDelete.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnDelete.Location = new System.Drawing.Point(4, 3);
-            btnDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new System.Drawing.Size(115, 73);
-            btnDelete.TabIndex = 0;
-            btnDelete.Text = "Delete";
-            btnDelete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnDelete.UseVisualStyleBackColor = true;
-            btnDelete.Click += btnDelete_Click;
-            // 
-            // btnUpdate
-            // 
-            btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnUpdate.Location = new System.Drawing.Point(127, 3);
-            btnUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new System.Drawing.Size(136, 73);
-            btnUpdate.TabIndex = 0;
-            btnUpdate.Text = "Update";
-            btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnUpdate.UseVisualStyleBackColor = true;
-            btnUpdate.Click += btnUpdate_Click;
-            // 
-            // btnAdd
-            // 
-            btnAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnAdd.Location = new System.Drawing.Point(271, 3);
-            btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new System.Drawing.Size(128, 73);
-            btnAdd.TabIndex = 2;
-            btnAdd.Text = "Add";
-            btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
-            // 
-            // btnPrint
-            // 
-            btnPrint.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnPrint.Location = new System.Drawing.Point(407, 3);
-            btnPrint.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            btnPrint.Name = "btnPrint";
-            btnPrint.Size = new System.Drawing.Size(128, 73);
-            btnPrint.TabIndex = 3;
-            btnPrint.Text = "Print All";
-            btnPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnPrint.UseVisualStyleBackColor = true;
-            btnPrint.Click += btnPrint_Click;
             // 
             // pnlRight
             // 
@@ -398,6 +301,103 @@
             dtpFrom.Size = new System.Drawing.Size(275, 26);
             dtpFrom.TabIndex = 15;
             // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(flowLayoutPanel1);
+            groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            groupBox5.ForeColor = System.Drawing.Color.Blue;
+            groupBox5.Location = new System.Drawing.Point(0, 11);
+            groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox5.Size = new System.Drawing.Size(645, 108);
+            groupBox5.TabIndex = 0;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Manipulation:";
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            flowLayoutPanel1.Controls.Add(btnDelete);
+            flowLayoutPanel1.Controls.Add(btnUpdate);
+            flowLayoutPanel1.Controls.Add(btnAdd);
+            flowLayoutPanel1.Controls.Add(btnPrint);
+            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutPanel1.Location = new System.Drawing.Point(4, 22);
+            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flowLayoutPanel1.MinimumSize = new System.Drawing.Size(700, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new System.Drawing.Size(700, 83);
+            flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.WrapContents = false;
+            // 
+            // btnPrint
+            // 
+            btnPrint.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnPrint.Location = new System.Drawing.Point(407, 3);
+            btnPrint.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnPrint.Name = "btnPrint";
+            btnPrint.Size = new System.Drawing.Size(128, 73);
+            btnPrint.TabIndex = 3;
+            btnPrint.Text = "Print All";
+            btnPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.Click += btnPrint_Click;
+            // 
+            // btnAdd
+            // 
+            btnAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnAdd.Location = new System.Drawing.Point(271, 3);
+            btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(128, 73);
+            btnAdd.TabIndex = 2;
+            btnAdd.Text = "Add";
+            btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnUpdate.Location = new System.Drawing.Point(127, 3);
+            btnUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new System.Drawing.Size(136, 73);
+            btnUpdate.TabIndex = 0;
+            btnUpdate.Text = "Update";
+            btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnDelete.Location = new System.Drawing.Point(4, 3);
+            btnDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(115, 73);
+            btnDelete.TabIndex = 0;
+            btnDelete.Text = "Delete";
+            btnDelete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(groupBox5);
+            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel1.Location = new System.Drawing.Point(0, 461);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(645, 119);
+            panel1.TabIndex = 1;
+            // 
             // FrmSalary
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -411,14 +411,14 @@
             pnlCenter.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvListSalary).EndInit();
-            panel1.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
             pnlRight.ResumeLayout(false);
             Detail.ResumeLayout(false);
             Detail.PerformLayout();
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -427,12 +427,6 @@
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.DataGridView dgvListSalary;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel pnlRight;
         private System.Windows.Forms.Panel Detail;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -452,6 +446,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpTo;
         private System.Windows.Forms.DateTimePicker dtpFrom;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnPrint;
     }
 }

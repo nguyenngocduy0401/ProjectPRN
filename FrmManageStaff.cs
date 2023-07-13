@@ -37,7 +37,6 @@ namespace ProjectPRN211
                           p.Salary,
                           sr.RoleName,
                           p.Phone,
-                          p.OffShift,
                           p.Status
                       }
                       )
@@ -89,7 +88,6 @@ namespace ProjectPRN211
                 txtEmail.Text = obj.Email;
                 txtPhone.Text = obj.Phone;
                 txtHourlyWage.Text = obj.Salary.ToString();
-                numShiftOff.Value = obj.OffShift;
                 dtBirthday.Text = obj.BirthDay.ToString();
                 cbRole.SelectedValue = obj.RoleId;
                 cbStatus.SelectedIndex = obj.Status;
@@ -113,7 +111,6 @@ namespace ProjectPRN211
                           p.Salary,
                           sr.RoleName,
                           p.Phone,
-                          p.OffShift
                       }
                       )
             };
@@ -133,7 +130,7 @@ namespace ProjectPRN211
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            var staff = new staff();
+            var staff = new Staff();
             _staffServices = new StaffServices();
             //if (txtName.Text.Trim() == "" || txtEmail.Text.Trim() == "" || txtPhone.Text.Trim() == "" || txtHourlyWage.Text.Trim() == "")
             //{
@@ -149,7 +146,6 @@ namespace ProjectPRN211
                 staff.Phone = txtPhone.Text;
                 staff.RoleId = int.Parse(cbRole.SelectedValue.ToString());
                 staff.BirthDay = dtBirthday.Value.Date;
-                staff.OffShift = (int)numShiftOff.Value;
                 staff.Salary = int.Parse(txtHourlyWage.Text);
                 staff.Status = cbStatus.SelectedIndex;
                 _staffServices.Create(staff);
@@ -188,7 +184,6 @@ namespace ProjectPRN211
                     obj.Name = txtName.Text;
                     obj.Email = txtEmail.Text;
                     obj.Phone = txtPhone.Text;
-                    obj.OffShift = (int)numShiftOff.Value;
                     obj.BirthDay = dtBirthday.Value.Date;
                     obj.Salary = int.Parse(txtHourlyWage.Text);
                     obj.RoleId = int.Parse(cbRole.SelectedValue.ToString());

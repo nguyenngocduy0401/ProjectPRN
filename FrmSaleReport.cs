@@ -8,7 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Data;
 using System.ComponentModel;
-using Repository.Service;
+using Repository.Services;
 using Repository.Models;
 using System.Reflection.Metadata.Ecma335;
 using System.Linq;
@@ -26,7 +26,7 @@ namespace CoffeeManager
         private DataTable _dataForReport = new DataTable();
         private string _infoStore = "";
         private OrderServices _orderServices = new OrderServices();
-        private OrderDetailsServices _orderDetailsServices = new OrderDetailsServices();
+        private OrderDetailServices _orderDetailsServices = new OrderDetailServices();
         private ProductServices _productServices = new ProductServices();
         public FrmSaleReport()
         {
@@ -122,6 +122,11 @@ namespace CoffeeManager
                    };
                 dgvOrder.Rows.Add(row);
             }
+        }
+
+        private void FrmSaleReport_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,6 +38,11 @@
             btnUpdate = new System.Windows.Forms.Button();
             btnAdd = new System.Windows.Forms.Button();
             groupBox7 = new System.Windows.Forms.GroupBox();
+            btnSearch = new System.Windows.Forms.Button();
+            label7 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            dtpTo = new System.Windows.Forms.DateTimePicker();
+            dtpFrom = new System.Windows.Forms.DateTimePicker();
             groupBox3 = new System.Windows.Forms.GroupBox();
             pnlRight = new System.Windows.Forms.Panel();
             Detail = new System.Windows.Forms.Panel();
@@ -51,11 +56,6 @@
             label4 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
-            dtpFrom = new System.Windows.Forms.DateTimePicker();
-            dtpTo = new System.Windows.Forms.DateTimePicker();
-            label6 = new System.Windows.Forms.Label();
-            label7 = new System.Windows.Forms.Label();
-            btnSearch = new System.Windows.Forms.Button();
             pnlCenter.SuspendLayout();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListShift).BeginInit();
@@ -132,7 +132,7 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(255, 224, 192);
+            flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             flowLayoutPanel1.Controls.Add(btnDelete);
             flowLayoutPanel1.Controls.Add(btnUpdate);
             flowLayoutPanel1.Controls.Add(btnAdd);
@@ -189,6 +189,7 @@
             // 
             // groupBox7
             // 
+            groupBox7.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
             groupBox7.Controls.Add(btnSearch);
             groupBox7.Controls.Add(label7);
             groupBox7.Controls.Add(label6);
@@ -205,6 +206,56 @@
             groupBox7.TabIndex = 0;
             groupBox7.TabStop = false;
             groupBox7.Text = "Search";
+            // 
+            // btnSearch
+            // 
+            btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnSearch.Location = new System.Drawing.Point(286, 102);
+            btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new System.Drawing.Size(100, 29);
+            btnSearch.TabIndex = 14;
+            btnSearch.Text = "Search";
+            btnSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Enabled = false;
+            label7.Location = new System.Drawing.Point(9, 70);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(27, 20);
+            label7.TabIndex = 13;
+            label7.Text = "To";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Enabled = false;
+            label6.Location = new System.Drawing.Point(9, 29);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(46, 20);
+            label6.TabIndex = 12;
+            label6.Text = "From";
+            label6.Click += label6_Click;
+            // 
+            // dtpTo
+            // 
+            dtpTo.Location = new System.Drawing.Point(61, 70);
+            dtpTo.Name = "dtpTo";
+            dtpTo.Size = new System.Drawing.Size(275, 26);
+            dtpTo.TabIndex = 2;
+            dtpTo.ValueChanged += dateTimePicker2_ValueChanged;
+            // 
+            // dtpFrom
+            // 
+            dtpFrom.Location = new System.Drawing.Point(61, 25);
+            dtpFrom.Name = "dtpFrom";
+            dtpFrom.Size = new System.Drawing.Size(275, 26);
+            dtpFrom.TabIndex = 1;
             // 
             // groupBox3
             // 
@@ -236,7 +287,7 @@
             // 
             // Detail
             // 
-            Detail.BackColor = System.Drawing.Color.PaleTurquoise;
+            Detail.BackColor = System.Drawing.Color.LightGray;
             Detail.Controls.Add(label3);
             Detail.Controls.Add(txtSalaryDetailsID);
             Detail.Controls.Add(txtEndTime);
@@ -249,7 +300,7 @@
             Detail.Controls.Add(label1);
             Detail.Location = new System.Drawing.Point(0, 141);
             Detail.Name = "Detail";
-            Detail.Size = new System.Drawing.Size(415, 390);
+            Detail.Size = new System.Drawing.Size(415, 402);
             Detail.TabIndex = 5;
             // 
             // label3
@@ -332,56 +383,6 @@
             label1.Size = new System.Drawing.Size(42, 15);
             label1.TabIndex = 0;
             label1.Text = "StaffID";
-            // 
-            // dtpFrom
-            // 
-            dtpFrom.Location = new System.Drawing.Point(61, 25);
-            dtpFrom.Name = "dtpFrom";
-            dtpFrom.Size = new System.Drawing.Size(275, 26);
-            dtpFrom.TabIndex = 1;
-            // 
-            // dtpTo
-            // 
-            dtpTo.Location = new System.Drawing.Point(61, 70);
-            dtpTo.Name = "dtpTo";
-            dtpTo.Size = new System.Drawing.Size(275, 26);
-            dtpTo.TabIndex = 2;
-            dtpTo.ValueChanged += dateTimePicker2_ValueChanged;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Enabled = false;
-            label6.Location = new System.Drawing.Point(9, 29);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(46, 20);
-            label6.TabIndex = 12;
-            label6.Text = "From";
-            label6.Click += label6_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Enabled = false;
-            label7.Location = new System.Drawing.Point(9, 70);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(27, 20);
-            label7.TabIndex = 13;
-            label7.Text = "To";
-            // 
-            // btnSearch
-            // 
-            btnSearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            btnSearch.Location = new System.Drawing.Point(286, 102);
-            btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new System.Drawing.Size(100, 29);
-            btnSearch.TabIndex = 14;
-            btnSearch.Text = "Search";
-            btnSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnSearch.UseVisualStyleBackColor = true;
-            btnSearch.Click += btnSearch_Click;
             // 
             // FrmManagerShift
             // 

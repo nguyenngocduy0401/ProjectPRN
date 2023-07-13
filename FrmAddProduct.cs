@@ -10,7 +10,7 @@ using System.Security.Principal;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Repository.Models;
-using Repository.Service;
+using Repository.Services;
 
 namespace CoffeeManager
 {

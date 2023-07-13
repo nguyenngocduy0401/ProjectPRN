@@ -207,6 +207,7 @@ namespace CoffeeManager
             Controls.Add(panel1);
             Name = "FrmSaleReport";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            Load += FrmSaleReport_Load;
             GrbDateTime.ResumeLayout(false);
             GrbDateTime.PerformLayout();
             panel1.ResumeLayout(false);

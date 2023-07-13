@@ -1,7 +1,7 @@
 ﻿using Microsoft.Identity.Client;
 using Microsoft.VisualBasic.ApplicationServices;
 using Repository.Models;
-using Repository.Service;
+using Repository.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -36,7 +36,7 @@ namespace CoffeeManager
         private List<Product> listProductsOnOrder = new List<Product>();
         private OrderServices _orderServices = new OrderServices();
         private CategoryServices _categoryServices = new CategoryServices();
-        private OrderDetailsServices _orderDetailsServices = new OrderDetailsServices();
+        private OrderDetailServices _orderDetailsServices = new OrderDetailServices();
 
         public FrmMain()
         {

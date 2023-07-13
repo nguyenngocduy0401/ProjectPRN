@@ -1,5 +1,5 @@
 ﻿using Repository.Models;
-using Repository.Service;
+using Repository.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -197,6 +197,13 @@ namespace ProjectPRN
                 blMaHang.Visible = true;
                 txtMaHang.Visible = true;
             }
+        }
+
+
+
+        private void Detail_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
